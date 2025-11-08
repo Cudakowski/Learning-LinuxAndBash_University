@@ -1,0 +1,6 @@
+/home/staff/ewao/UNIX/Pan_Tadeusz-h100.txt
+/home/staff/ewao/UNIX/Pan_Tadeusz-t200.txt
+/home/staff/ewao/UNIX/pliki/plik.html
+/home/staff/ewao/UNIX/pusty.html
+/home/staff/ewao/UNIX/Pan_Tadeusz-h200.txt
+/home/staff/ewao/UNIX/Pan_Tadeusz-t100.txt

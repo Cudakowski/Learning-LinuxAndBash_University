@@ -1,0 +1,20 @@
+=========== /home/staff/ewao/Linux-kol/Pliki/ala =============
+ala ma kota
+ola ma psa
+
+=========== /home/staff/ewao/Linux-kol/Pliki/a.txt =============
+To jest plik a
+KONIEC
+
+=========== /home/staff/ewao/Linux-kol/Pliki/b.txt =============
+To jest plik b
+KONIEC
+
+=========== /home/staff/ewao/Linux-kol/Pliki/c =============
+To jest plik c
+KONIEC
+
+=========== /home/staff/ewao/Linux-kol/Pliki/d =============
+To jest plik d
+KONIEC
+

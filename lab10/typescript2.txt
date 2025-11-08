@@ -1,0 +1,226 @@
+Script started on 2024-12-16 00:43:15+01:00 [TERM="xterm-256color" TTY="/dev/pts/15" COLUMNS="94" LINES="30"]
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ ./s3`[K.sh -l makapaka
+[?2004l8
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ ./s45[K.sh -a 3.sh -l makapaka[8P4.sh -a 3.sh -l makapaka[8P4.sh -a kek ekhem/ene.
+ene.co   ene.txt  
+]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ ./s4.sh -a kek ekhem/ene.co
+[?2004l[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree
+[?2004l[01;34m.[0m
+├── [01;34mekhem[0m
+│   ├── emene.kekw
+│   ├── ene.co.kek
+│   ├── ene.txt
+│   ├── [01;34mlicz[0m
+│   │   └── lili.txt
+│   ├── liczby
+│   └── [01;34mopanie[0m
+│       └── ok
+├── [01;32ms1.sh[0m
+├── [01;32ms2.sh[0m
+├── [01;32ms3.sh[0m
+├── [01;32ms4.sh[0m
+├── typescript
+└── typescript2
+
+4 directories, 12 files
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree./s4.sh -a kek ekhem/ene.co[1P[1@b[C[C[C[C[1P ekhem/ene.co[1P ekhem/ene.co[1P ekhem/ene.co[1Pekhem/ene.co[C[C[C[C[C[C[C[C[C[C[C[C[C.kek
+[?2004l[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree
+[?2004l[01;34m.[0m
+├── [01;34mekhem[0m
+│   ├── emene.kekw
+│   ├── ene.co
+│   ├── ene.txt
+│   ├── [01;34mlicz[0m
+│   │   └── lili.txt
+│   ├── liczby
+│   └── [01;34mopanie[0m
+│       └── ok
+├── [01;32ms1.sh[0m
+├── [01;32ms2.sh[0m
+├── [01;32ms3.sh[0m
+├── [01;32ms4.sh[0m
+├── typescript
+└── typescript2
+
+4 directories, 12 files
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree./s4.sh -b ekhem/ene.co.kekv ekhem/ene.co.kek[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K
+[?2004lZmiana z ekhem/ene.co na ekhem/ene
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ ./s4.sh -bv ekhem/ene.co[C[1P ekhem/ene.co[1P ekhem/ene.coe ekhem/ene.co[C ekhem/ene.com ekhem/ene.com ekhem/ene.com ekhem/ene.co[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K
+[?2004lcut: invalid decreasing range
+Try 'cut --help' for more information.
+./s4.sh: line 59: ekhem/ene.mmm: Permission denied
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree
+[?2004l[01;34m.[0m
+├── [01;34mekhem[0m
+│   ├── emene.kekw
+│   ├── ene.mmm
+│   ├── ene.txt
+│   ├── [01;34mlicz[0m
+│   │   └── lili.txt
+│   ├── liczby
+│   └── [01;34mopanie[0m
+│       └── ok
+├── [01;32ms1.sh[0m
+├── [01;32ms2.sh[0m
+├── [01;32ms3.sh[0m
+├── [01;32ms4.sh[0m
+├── typescript
+└── typescript2
+
+4 directories, 12 files
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree./s4.sh -e mmm ekhem/ene[1P ekhem/ene[1P ekhem/ene[1P ekhem/eneh ekhem/enem ekhem/enem ekhem/ene
+[?2004lcut: invalid decreasing range
+Try 'cut --help' for more information.
+mv: cannot stat 'ekhem/ene': No such file or directory
+./s4.sh: line 59: ekhem/ene.hmm: No such file or directory
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree
+[?2004l[01;34m.[0m
+├── [01;34mekhem[0m
+│   ├── emene.kekw
+│   ├── ene.mmm
+│   ├── ene.txt
+│   ├── [01;34mlicz[0m
+│   │   └── lili.txt
+│   ├── liczby
+│   └── [01;34mopanie[0m
+│       └── ok
+├── [01;32ms1.sh[0m
+├── [01;32ms2.sh[0m
+├── [01;32ms3.sh[0m
+├── [01;32ms4.sh[0m
+├── typescript
+└── typescript2
+
+4 directories, 12 files
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree./s4.sh -e hmm ekhem/ene.mmm
+[?2004l[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ ./s4.sh -e hmm ekhem/ene.mmmtree[K
+[?2004l[01;34m.[0m
+├── [01;34mekhem[0m
+│   ├── emene.kekw
+│   ├── ene.hmm
+│   ├── ene.txt
+│   ├── [01;34mlicz[0m
+│   │   └── lili.txt
+│   ├── liczby
+│   └── [01;34mopanie[0m
+│       └── ok
+├── [01;32ms1.sh[0m
+├── [01;32ms2.sh[0m
+├── [01;32ms3.sh[0m
+├── [01;32ms4.sh[0m
+├── typescript
+└── typescript2
+
+4 directories, 12 files
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree./s4.sh -e hmm ekhem/ene.mmm[1P[1@ctree[K[Kmv ene[K[Ke[Kkhem/ene.txt tree[Kmv ekhem/ene.txt ekhem/ene-mene.tc[Kxt
+[?2004l[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ mv ekhem/ene.txt ekhem/ene-mene.txttree[K./s4.sh -c hmm ekhem/ene.mmm[1P ekhem/ene.mmm[1P ekhem/ene.mmm[1P ekhem/ene.mmm[1Pekhem/ene.mmm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[Km[K[K-mene.txt 
+[?2004l./s4.sh: line 121: ekhem/mene-ene.txt: Permission denied
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree
+[?2004l[01;34m.[0m
+├── [01;34mekhem[0m
+│   ├── emene.kekw
+│   ├── ene.hmm
+│   ├── [01;34mlicz[0m
+│   │   └── lili.txt
+│   ├── liczby
+│   ├── mene-ene.txt
+│   └── [01;34mopanie[0m
+│       └── ok
+├── [01;32ms1.sh[0m
+├── [01;32ms2.sh[0m
+├── [01;32ms3.sh[0m
+├── [01;32ms4.sh[0m
+├── typescript
+└── typescript2
+
+4 directories, 12 files
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree./s4.sh -c ekhem/ene-mene.txt [1P[1@d
+[?2004lmv: cannot stat 'ekhem/ene-mene.txt': No such file or directory
+./s4.sh: line 149: ekhem/mene.txt: No such file or directory
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree
+[?2004l[01;34m.[0m
+├── [01;34mekhem[0m
+│   ├── emene.kekw
+│   ├── ene.hmm
+│   ├── [01;34mlicz[0m
+│   │   └── lili.txt
+│   ├── liczby
+│   ├── mene-ene.txt
+│   └── [01;34mopanie[0m
+│       └── ok
+├── [01;32ms1.sh[0m
+├── [01;32ms2.sh[0m
+├── [01;32ms3.sh[0m
+├── [01;32ms4.sh[0m
+├── typescript
+└── typescript2
+
+4 directories, 12 files
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree./s4.sh -d ekhem/ene-mene.txt [C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1@m[1@e[1@n[1@e[1@-[1@e[1@n[1@e
+[?2004l./s4.sh: line 149: ekhem/ene.txt: Permission denied
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree
+[?2004l[01;34m.[0m
+├── [01;34mekhem[0m
+│   ├── emene.kekw
+│   ├── ene.hmm
+│   ├── ene.txt
+│   ├── [01;34mlicz[0m
+│   │   └── lili.txt
+│   ├── liczby
+│   └── [01;34mopanie[0m
+│       └── ok
+├── [01;32ms1.sh[0m
+├── [01;32ms2.sh[0m
+├── [01;32ms3.sh[0m
+├── [01;32ms4.sh[0m
+├── typescript
+└── typescript2
+
+4 directories, 12 files
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ usunąłem pierwszą część zama[Kiast drugiej niestety [K, karam ba
+[?2004lbash: usunąłem: command not found
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ usunąłem pierwszą część zamiast drugiej niestety, karamba[A]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./s4.sh -d ekhem/mene-ene.txt [1P[1@a[1P[1@b[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[K[K[K[K*
+[?2004lmv: 'ekhem/ene.txt' and 'ekhem/ene.txt' are the same file
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree
+[?2004l[01;34m.[0m
+├── [01;34mekhem[0m
+│   ├── emene.kekw
+│   ├── ene
+│   ├── ene.txt
+│   ├── [01;34mlicz[0m
+│   │   └── lili.txt
+│   ├── liczby
+│   └── [01;34mopanie[0m
+│       └── ok
+├── [01;32ms1.sh[0m
+├── [01;32ms2.sh[0m
+├── [01;32ms3.sh[0m
+├── [01;32ms4.sh[0m
+├── typescript
+└── typescript2
+
+4 directories, 12 files
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree./s4.sh -b ekhem/ene.*
+[?2004l[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ tree
+[?2004l[01;34m.[0m
+├── [01;34mekhem[0m
+│   ├── emene.kekw
+│   ├── ene
+│   ├── [01;34mlicz[0m
+│   │   └── lili.txt
+│   ├── liczby
+│   └── [01;34mopanie[0m
+│       └── ok
+├── [01;32ms1.sh[0m
+├── [01;32ms2.sh[0m
+├── [01;32ms3.sh[0m
+├── [01;32ms4.sh[0m
+├── typescript
+└── typescript2
+
+4 directories, 11 files
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ exit
+[?2004lexit
+
+Script done on 2024-12-16 00:49:50+01:00 [COMMAND_EXIT_CODE="0"]

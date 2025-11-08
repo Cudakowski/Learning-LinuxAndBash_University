@@ -1,0 +1,10 @@
+total 50K
+-rw-r--r-- 1 4osowski stud2024   0 paź 27 11:01 a
+-rw-r--r-- 1 4osowski stud2024  16 paź 27 11:21 a.sh
+-rw-r--r-- 1 4osowski stud2024   9 paź 27 11:10 a.sh~
+-rw-r--r-- 1 4osowski stud2024  16 wrz 13 11:11 b.sh
+drwxr-xr-x 3 4osowski stud2024   7 paź 27 11:19 K1
+-rw-r--r-- 1 4osowski stud2024   0 paź 27 11:26 L3_Osowski_Is.txt
+-rw-r--r-- 1 4osowski stud2024 853 paź 27 11:25 L3_Osowski_tree.txt
+drwxr-xr-x 4 4osowski stud2024   4 paź 27 11:10 Linux
+-rw-r--r-- 1 4osowski stud2024 198 paź 27 11:03 tree1

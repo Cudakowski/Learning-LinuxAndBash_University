@@ -1,0 +1,3 @@
+plik1.txt:3 	trzy 
+plik1.txt:31 	trzydzieści jeden 
+plik2.txt:3 Three

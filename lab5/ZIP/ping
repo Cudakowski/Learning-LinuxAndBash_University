@@ -1,0 +1,10 @@
+PING stud206-10.fis.agh.edu.pl (172.20.206.10) 56(84) bytes of data.
+64 bytes from stud206-10.fis.agh.edu.pl (172.20.206.10): icmp_seq=1 ttl=64 time=0.360 ms
+64 bytes from stud206-10.fis.agh.edu.pl (172.20.206.10): icmp_seq=2 ttl=64 time=0.387 ms
+64 bytes from stud206-10.fis.agh.edu.pl (172.20.206.10): icmp_seq=3 ttl=64 time=0.489 ms
+64 bytes from stud206-10.fis.agh.edu.pl (172.20.206.10): icmp_seq=4 ttl=64 time=0.403 ms
+64 bytes from stud206-10.fis.agh.edu.pl (172.20.206.10): icmp_seq=5 ttl=64 time=0.467 ms
+
+--- stud206-10.fis.agh.edu.pl ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+rtt min/avg/max/mdev = 0.360/0.421/0.489/0.048 ms

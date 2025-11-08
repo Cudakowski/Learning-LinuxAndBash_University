@@ -1,0 +1,118 @@
+#11
+cat lista | awk '{print $3}'
+#12
+awk 'NR ==2 || NR >= 5 && NR <= 7 {print}' lista
+#13
+awk 'BEGIN {ile=0} $0 {sum += $4} {ile += 1} END {sr= sum/ile;print "Suma:", sum;print "Srednia:", sr}' lista
+#14
+awk '$4 >= 50 {print}' lista
+#15
+awk '{sum = $4 + $5;print $2,sum}' lista
+#16
+awk 'BEGIN {czwarta=999} {if($4<czwarta) {czwarta=$4; druga=$2}} END {print druga}' lista
+#21
+awk -F';' '{sum=0; for(i=4;i<=NF;i++) sum+=$i; print sum}' lista.csv
+#22
+awk -F';' '/^[ \t]*$/ {puste+=1} END {print "Puste:",puste, "Niepuste:",NR-putse}' lista2.csv 
+#usunąłem wcześniej w pliku lista2.csv te takie ^M
+#23
+awk -F';' 'BEGIN {OFS=""} {print NF-1,":",$0}' lista.csv
+#24
+awk -F';' 'BEGIN {ORS=" "} {for(i=1;i<=NF;i=i+2) print $i;print "\n"}' lista.csv
+#25
+awk -F';' '{print $(NF-5)}' lista.csv
+#26
+awk -F';' 'BEGIN {min=2000;max=0} {if(NF<min) min=NF ; if(NF>max) max=NF; a[NR]=$0;b[NR]=NF} END {for(i=1;i<=NR;i++){if(b[$i]==max) print "Maksymalne: ", a[$i]; if(b[$i]==min) print "Minimalne: ", a[$i]}}' lista.csv
+#27
+awk -F';' '{a[NR]=$3 ; c[NR]=$2 ; d[NR]=$1 ; b[NR]++; for(i=1;i<NR;i++) if(a[i]==$3 && (c[i]!=$2 || d[i]!=$1)) b[NR]++} {if(b[NR]>=2) print "Email powtórzony i inne dane:",$0 ; else print $0}' lista.csv
+#28
+awk -f s8.awk lista.csv
+
+#!/usr/bin/awk -f
+
+BEGIN {
+FS=";"
+print "IMIE, NAZWISKO, LICZBA OCEN, SUMA, SREDNIA"
+suma_sr=0
+}
+
+{
+suma=0;
+for(i=4;i<=NF;i++) suma+=$i;
+print $1,$2,NF-4,suma,suma/(NF-4);
+suma_sr+=(suma/(NF-4))
+}
+
+END {
+print suma_sr/NR
+}
+
+#29
+./s9.sh lista.csv 4 5
+
+#!/bin/bash
+error=0
+if [ "$#" -le "1" ]
+then
+        echo -e "> Za mało parametrów"
+        error=1
+fi
+if [ ! -f "$1" ]
+then
+        echo -e "> Plik zwykły \"${1}\" nie istnieje"
+        error=1
+fi
+if [[ $1 != *.csv ]]
+then
+        echo -e "> \"${1}\" nie ma rozszerzenia csv"
+        error=1
+fi
+if [[ $error == 1 ]]; then
+        exit 1
+fi
+j=1
+for i in $@
+do
+#       echo -e "$i"
+        if [[ $j != 1 ]]
+                then
+                if [[ $i =~ ^[0-9]+$ ]]
+                then
+#Chyba pani w poleceniu chodziło -v a nie -u. Tak zgaduję.
+                        awk -F';' -v N1="$i" '{print $N1}' $1
+                        echo -e ""
+                else
+                        echo -e "> Złe dane wejściowe \"${i}\"\n"
+                fi
+        fi
+        j=0
+done
+#kompletnie nie mam pomysłu jak zrobić aby kolumny były obok siebie ¯\_(c:)_/¯
+
+#3
+awk -f 3.awk eh.txt
+
+#!/usr/bin/awk -f
+BEGIN {
+j=1
+}
+
+/ / {
+split($0, a, " ", seps);
+nazw[j]=a[2];
+imie[j]=a[1]
+}
+
+/^[0-9]{9}$/ {
+tel[j]=$0
+}
+/@/ {
+mail[j]=$0
+}
+/^[ \t]*$/ {
+j++
+}
+END {
+for (i=1;i<=j;i++)
+print nazw[i],imie[i],mail[i],tel[i]
+}

@@ -1,0 +1,70 @@
+12) sed '$d' kotek_sed
+13) sed -n '27,$p' kotek_sed
+14) sed '/\S/!d' kotek_sed
+15) sed '/\S/!c\***LINIA PUSTA***' kotek_sed
+16) sed '1,/\S/ {/^$/d}' kotek_sed
+17) sed 's/[ \t]\+//' kotek_sed
+18) sed -E 's|[0-9]+|[&]|g' kotek_sed
+19) sed '/\-/!d' kotek_sed
+110) sed '/\-/ s/$/\t[DIALOG]/' kotek_sed
+111) -n '/komentarz/,/\/komentarz/p' kotek_sed
+112) sed '/komentarz/,/\/komentarz/d' kotek_sed
+113) sed '/komentarz/,/\/komentarz/ {s/\S//g}' kotek_sed
+114) sed -e '/Pan kotek/i\Stanisław Jachowicz' -e '/KONIEC/a\Stanisław Jachowicz' kotek_sed
+115) sed 's/<.*>/<ZNACZNIK>/g' kotek_sed
+116)  sed '/komentarz/,/\/komentarz/ {/ /d}' kotek_sed
+117) sed '/komentarz/,/\/komentarz/ {s/ /_/g ; s/\t/_/g}' kotek_sed
+2) ./s2.sh pliczek.csv
+#troche dziwne że wynik zadania 2 trzeba było zapisać do pliku 3 ale ok
+
+#!/bin/bash
+if [ "$1" != "" ]
+   then
+      if [ ! -f "$1" ]
+         then
+            echo "Bledne dane."
+            exit
+      fi
+   else
+      echo "Nie podano pliku."
+      exit
+fi
+sed -e '1d' -Ee 's/[0-9]+//g' -Ee 's/([A-Za-z ]+);([A-Za-z ]+)/\2 \1/' -e 's/;/ /g' -e 's/^ //g' -e 's/  / /g' $1 | sort | nl | sed -e 's/^     //g' -e 's/\t/) /'
+
+#Nie zauważyłem, że wynik ma być bez wieku, dlatego trochę przekombinowałem.
+#Kiedy usunie się "-Ee 's/[0-9]+//g'" wynik zawiera wiek.
+
+31) sed -Ef skrypt1.sed read-komentarze.c
+
+#!/bin/sed -f
+/\/\*+/,/\*+\//!d
+/(\/\*+).*(\*+\/)/,/\/\*+/ {s/^[^/]+$//g}
+s/\*//g
+s/\///g
+s/^    //g
+s/^ //g
+/^$/d
+
+32) sed -Ef skrypt2.sed read-komentarze.c
+
+#!/bin/sed -f
+/\/\*+.*\*+\// {s/[\/\*]//g ; s/^/\/\//g}
+/\/\*+/,/\*+\// {s/[\*\/]//g ; s/.*\S/\/\/&/g}
+
+33) sed '/if/i\Instrukcja if' read-komentarze.c
+34) sed -Ef skrypt4.sed read-komentarze.c 
+
+#!/bin/sed -f
+/\/\*+.*\*+\// {s/[\/\*]//g ; s/^/\/\//g}
+/\/\*+/,/\*+\// {s/[\*\/]//g ; s/.*\S/\/\/&/g}
+s/\/\/.*//g
+#skopiowałem skrypt do podpunktu drugiego i dopisałem tylko jedną linijke ¯\_(c:)_/¯
+
+35) sed -Ef skrypt5.sed read-komentarze.c 
+
+#!/bin/sed -f
+s/\bfile\b/plik/g
+/".*plik.*"/ {s/plik/file/g}
+s/([A-Za-z]+)_([A-Za-z]+)/\2_\1/
+
+36) sed -Ee '/.*\S.*\{/a\{' -Ee '/.*\S.*\{/s/\{//g' read-komentarze.c

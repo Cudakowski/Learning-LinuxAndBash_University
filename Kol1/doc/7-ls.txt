@@ -1,0 +1,64 @@
+.:
+total 14K
+drwxr-xr-x 3 4osowski stud2024 15 Dec  2 11:19 doc
+drwxr--r-x 3 4osowski stud2024  3 Dec  2 10:18 zip
+
+./doc:
+total 78K
+-rw-r--r-- 1 4osowski stud2024  125 Dec  2 10:19 1-tree.txt
+-rw-r--r-- 1 4osowski stud2024  105 Dec  2 10:23 3.txt
+-rw-r--r-- 1 4osowski stud2024  983 Dec  2 10:32 4a.txt
+-rw-r--r-- 1 4osowski stud2024  511 Dec  2 10:35 4b.txt
+-rw-r--r-- 1 4osowski stud2024 1.3K Dec  2 10:51 4d.txt
+-rw-r--r-- 1 4osowski stud2024  746 Dec  2 10:55 4e.txt
+-rw-r--r-- 1 4osowski stud2024  151 Dec  2 11:01 4f.txt
+-rw-r--r-- 1 4osowski stud2024  253 Dec  2 11:01 4f-users.txt
+-rw-r--r-- 1 4osowski stud2024  232 Dec  2 11:15 6a.txt
+-rw-r--r-- 1 4osowski stud2024  243 Dec  2 11:18 6b.txt
+-rw-r--r-- 1 4osowski stud2024    0 Dec  2 11:19 7-ls.txt
+-rw-r--r-- 1 4osowski stud2024 1.1K Dec  2 11:19 7-tree.txt
+drwx--xr-x 2 4osowski stud2024    2 Dec  2 10:18 temp
+
+./doc/temp:
+total 0
+
+./zip:
+total 14K
+drwxr-xr-x 3 4osowski stud2024 13 Dec  2 11:04 pliki
+
+./zip/pliki:
+total 652K
+-rw-r--r-- 1 4osowski stud2024    4 Dec  2 11:04 ala
+-rw-r--r-- 1 4osowski stud2024 508K Dec  2 11:04 arch1.zip
+-rw-r--r-- 1 4osowski stud2024 3.9K Dec  2 11:04 arch2.tar.gz
+drwxr-xr-x 3 4osowski stud2024    9 Dec  2 11:05 docs
+-rw-r--r-- 1 4osowski stud2024 4.6K Dec  2 11:04 main.c
+-rw-r--r-- 1 4osowski stud2024    0 Dec  2 11:04 makefile
+-rw-r--r-- 1 4osowski stud2024    0 Dec  2 11:04 Makefile
+-rw-r--r-- 1 4osowski stud2024  25K Dec  2 11:04 plik.html
+-rw-r--r-- 1 4osowski stud2024  377 Dec  2 11:04 receiver.c
+-rw-r--r-- 1 4osowski stud2024  428 Dec  2 11:04 sender.c
+-rw-r--r-- 1 4osowski stud2024  95K Dec  2 11:04 words
+
+./zip/pliki/docs:
+total 10K
+drwxr-xr-x 4 4osowski stud2024   4 Dec  2 11:04 a
+-rw-r--r-- 1 4osowski stud2024 930 Dec  2 11:04 kotek
+-rw-r--r-- 1 4osowski stud2024   0 Dec  2 11:04 myfile
+-rw-r--r-- 1 4osowski stud2024   0 Dec  2 11:04 s1
+-rw-r--r-- 1 4osowski stud2024   0 Dec  2 11:04 S1
+-rw-r--r-- 1 4osowski stud2024   0 Dec  2 11:04 Sm2
+-rw-r--r-- 1 4osowski stud2024   0 Dec  2 11:04 ss2
+
+./zip/pliki/docs/a:
+total 1.0K
+drwxr-xr-x 2 4osowski stud2024 3 Dec  2 11:04 a1
+drwxr-xr-x 2 4osowski stud2024 3 Dec  2 11:04 a2
+
+./zip/pliki/docs/a/a1:
+total 512
+-rw-r--r-- 1 4osowski stud2024 0 Dec  2 11:04 aa1
+
+./zip/pliki/docs/a/a2:
+total 512
+-rw-r--r-- 1 4osowski stud2024 0 Dec  2 11:04 aa2

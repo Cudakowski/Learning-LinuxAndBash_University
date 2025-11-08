@@ -1,0 +1,7 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+4osowski 3004723  0.0  0.0  22588  6920 pts/275  Ss+  11:19   0:00 -bash
+4osowski 3007152  0.0  0.0   9480  3344 pts/275  S    11:34   0:00 /bin/bash ./hop
+4osowski 3007875  0.0  0.0   8912  2604 pts/275  T    11:40   0:00 nano hop
+4osowski 3008023  0.0  0.0  22352  6668 pts/277  Ss   11:41   0:00 -bash
+4osowski 3008353  0.0  0.0   7896   568 pts/275  S    11:44   0:00 sleep 4
+4osowski 3008358  0.0  0.0  23320  5272 pts/277  R+   11:44   0:00 ps u

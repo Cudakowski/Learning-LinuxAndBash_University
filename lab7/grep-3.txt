@@ -1,0 +1,8 @@
+/home/staff/ewao/UNIX/pusty.c
+/home/staff/ewao/UNIX/CFG/receiver.c
+/home/staff/ewao/UNIX/CFG/main.c
+/home/staff/ewao/UNIX/CFG/sender.c
+/home/staff/ewao/UNIX/pliki/sender.c
+/home/staff/ewao/UNIX/pliki/plik.html
+/home/staff/ewao/UNIX/pliki/receiver.c
+/home/staff/ewao/UNIX/pliki/main.c

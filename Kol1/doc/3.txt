@@ -1,0 +1,2 @@
+drwxr--r-x 3 4osowski stud2024 3 Dec  2 10:18 zip
+drwx--xr-x 2 4osowski stud2024 2 Dec  2 10:18 doc/temp

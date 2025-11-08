@@ -1,0 +1,600 @@
+passwd
+ollo6k6k
+passwd
+exit
+ssh
+history
+nano b
+cat b
+nano b
+cat b
+cd .ssh/
+less .
+cd
+mkdir Linux-Osowski
+mkdir Linux-Osowski/lab3
+cd Linux-Osowski/lab3
+mkdir K1 K1/K2
+ls
+rmdir K1
+tree
+touch -c K1/a
+tree
+touch K1/a
+tree
+touch K1/K2/b
+tree
+touch -t 09130900 K1/a
+stat K1/a
+cp --help
+cp K1/* K3
+mkdir K3
+cp K1/* K3
+cp -r K1/* K3
+tree
+ls -l K3/
+tree
+tree > tree1
+tree
+rm --ignore-fail-on-non-empty K1
+rm --help
+rm -r K1
+tree
+cp -r ~ewao/Linux-lab3/ K3
+tree
+ls -Rl K3/
+tree
+mv -b Linux-lab3 Linux
+mv -b Linux-lab3/ Linux/
+mv K3/Linux-lab3 K3/Linux
+tree
+cp -r K3/Linux/Fonts K3
+tree
+mv K3/K2/b K3/K2/c
+tree
+mv K3 K1
+tree
+mv K1/Linux Linux
+tree
+mv Linux/a.sh a.sh
+mv Linux/a.sh ./a.sh
+history -w lab3.txt
+tree
+cat plik
+tree
+help
+exit
+mkdir Linux-Osowski
+cd Linux-Osowski/
+mkdir lab3
+cd lab3
+mkdir -pv K1/K2
+tree
+touch K1/a
+tree
+cp K1/a K2/b
+cp K1/a K1/K2/b
+tree
+touch -t 202409130920 K1/a
+stat K1/a
+mkdir K3
+cp K1/* K3/
+cp -r  K1/* K3/
+tree
+ls -l K3
+ls -lR K3
+tree
+tree > tree1
+tree
+rm -r K1/
+tree
+cp -rs ~ewao/Linux-lab3 K3/
+tree
+rm -r K3/Linux-lab3/
+tree
+cp -r ~ewao/Linux-lab3 K3/
+tree
+mv K3/Linux-lab3 K3/Linux
+tree
+cp -rs K3/Linux/Fonts/* K3/
+tree
+cp -s K3/Linux/Fonts/* K3/
+tree
+cp -l K3/Linux/Fonts/* K3/
+tree
+rm K3/45-latin.conf 
+rm K3/69-unifont.conf 
+tree
+cp K3/Linux/Fonts/* K3/
+tree
+cd K3/
+rm 45-latin.conf 
+rm 51-local.conf 
+rm 60-latin.conf 
+rm 69-unifont.conf 
+cd ..
+tree
+cp -d K3/Linux/Fonts/* K3/
+tree
+ls -l K3/
+mv K3/K2/b K3/K2/c
+tree
+mv K3 K1
+tree
+mv -r K1/Linux/ ./
+mv  K1/Linux ./
+tree
+mv Linux/A/a.sh ./
+mv Linux/A/a]b.sh ./
+mv Linux/A/b.sh ./
+tree
+mv K1/a ./
+tree
+cp -b b.sh a.sh 
+tree
+touch -t b.sh 202409131111
+history
+touch -t 202409131111 b.sh 
+stat b.sh 
+tree .. > 3_Osowski_tree.txt
+tree
+rm 3_Osowski_tree.txt 
+tree
+tree .. > L3_Osowski_tree.txt
+cp L3_Osowski_tree.txt ~ewao/Stud2024
+ls -lh > L3_Osowski_Is.txt
+cp L3_Osowski_Is ~ewao/Stud2024
+cp L3_Osowski_Is.txt ~ewao/Stud2024
+cat L3_Osowski_Is.txt 
+cat L3_Osowski_tree.txt 
+history -w lab3.txt
+scp -r 4Osowski:/home/Linux-Osowski/lab3/
+exit
+tree
+history
+tree
+exit
+cat lab4.txt 
+ls -l
+ls -lR
+rm K1/a
+ls -lR
+chmod -R u+rwx ./
+ls -lR
+mask
+umask
+umask --help
+umask 622
+umask -S
+umask 733
+umask -S
+umask 337
+umask -S
+touch uneditable
+umask 0022
+ls -lR
+ln K2/a a_hrd
+ln K2/a a_hrd2
+ln -s K2/a a_lnk
+ls -l
+cp a_hrd a_cp
+ls -lR
+ls -l K2/a
+ls -l a_cp
+ls -l a_hrd
+ls -l a_hrd2
+ls -l a_lnk
+rm a_cp
+ls -l a_lnk
+ls -l a_hrd2
+ls -l a_hrd
+ls -l K2/a
+cp a_hrd a_cp
+ls -l K2/a
+ls -l a_hrd
+ls -l a_hrd2
+ls -l a_lnk
+ls -l a_cp
+no_ja_nie_widze_zeby_ulegla_zmianie
+cat >> K2/a
+cat >> a_hrd
+ls -lR
+./a_hrd2
+./a_lnk
+cp a_lnk a_lnk2
+cp -d a_lnk a_lnk3
+ls -lR
+mv K2/a K2/K22/
+tree
+cat a_lnk
+cat a_hrd
+ls -lR
+ln --help
+ln K2/K22/a a_lnk
+ln -sf K2/K22/a a_lnk
+ln -sf ~/K2/K22/a a_lnk3
+ls -lR
+ln -sf ~K2/K22/a a_lnk3
+ls -lR
+ln -sf ~/K2/K22/a a_lnk3
+ls -lR
+ln -sf ~/Linux-Osowski/lab4/K2/K22/a a_lnk3
+ls -lR
+mv a_* LN/
+ls -l LN
+ln K2 LN/Ka2
+ln -s K2 LN/Ka2
+ls -l LN
+ln -sf K2 ~/LN/Ka2
+ln -sf K2 ~/Linux-OsKa2
+ls -l LN
+ln -sf ~/Linux-Osowski/lab4/K2 LN/Ka2
+ls -l LN
+ln -f ~/Linux-Osowski/lab4/K2 LN/Ka2
+ls -l LN
+ls LN/Ka2
+ls -l LN/Ka2
+cd LN/Ka2
+ls
+tree
+cd ..
+tree
+cd ..
+cp ~ewao/Linux-lab4/kotek.lnk LN/motylek.lnk
+cp -s ~ewao/Linux-lab4/kotek2.lnk LN/motylek2.lnk
+tree
+rm LN/motylek.lnk
+cp -s ~ewao/Linux-lab4/kotek.lnk LN/motylek.lnk
+tree
+cat LN/motylek.lnk
+cat LN/motylek2.lnk
+LN/motylek2.lnk
+LN/motylek.lnk
+no ja nie rozumiem
+nie wyskakuje mi zaden blad
+ls -lR
+ln 
+ln ~ewao/Linux-lab4/Lista-l3 LN/lista_hrd
+ln ~ewao/Linux-lab4/lista-l3 LN/lista_hrd
+ls -lR
+cat >> LN/lista_hrd
+ls -lR
+tyle samo 
+ln /bin/zcat LN/zcat
+ln -s /bin/zcat LN/zcat
+no możliwe jest tylko dowiązanie symboliczne
+ls -lAhR > L3_Osowski.txt
+tac --help
+tree .. > tree.txt
+tree
+cat L3_Osowski.txt tree.txt 
+tree
+cat L3_Osowski.txt 
+cat L3_Osowski.txt >> tree.txt 
+cat L3_Osowski.txt 
+cat tree.txt 
+rm tree.txt 
+tree .. > tree.txt
+cat tree.txt >> L3_Osowski.txt 
+cat L3_Osowski.txt 
+cp L3_Osowski.txt ~ewao/Stud2024/lab4/
+cp L3_Osowski.txt ~ewao/Stud2024/lab4
+cp L3_Osowski.txt ~ewao/Stud2024
+history -2 lab4_2.txt
+history -w lab4_2.txt
+tree
+exit
+mkdir ZIP
+cd ZIP/
+hostname > users
+date --help
+date
+date '%D'
+date '+%D'
+date '+%x'
+date '+%x' >> users 
+id
+id --help
+id -u
+id -u >> users 
+ssh 4osowski@tourus.agh.edu.pl "users" >> users 
+ssh 4osowski@taurus.agh.edu.pl "users" >> users 
+ssh 4osowski@taurus "users" >> users 
+ssh 4osowski@taurus "users"
+cd ..
+rmdir -r ZIP/
+rmdir --h
+rmdir -ignore-fail-on-non-empty ZIP/
+rmdir --ignore-fail-on-non-empty ZIP/
+tree
+rmdir -p ZIP/
+rmdir -p-ignore-fail-on-non-empty ZIP/
+rm ZIP/users
+rmdir ZIP/
+mkdir ZIP
+cd ZIP/
+hostname > users
+date >> users 
+id -u >> users 
+ssh 4osowski@taurus "users" >> users 
+nano
+nano users 
+finger -s Ewa Olejarz
+finger -s Ewa_Olejarz
+finger -s "Ewa Olejarz"
+finger -s ,Ewa Olejarz'
+finger -s 'Ewa Olejarz'
+finger -s ewaoo
+finger -s ewao
+finger -s volejarz
+ssh 4osowski@taurus "finger mindur" > user-info
+cat --help
+cat user-info 
+cat ************* >> user-info 
+cat '*************' >> user-info 
+cat "*************" >> user-info 
+cat  user-info *************
+cat user-info 
+rm user-info 
+ssh 4osowski@taurus "finger mindur" > user-info
+cat user-info 
+cat user-info "*************"
+cat user-info '*************'
+cat user-info << *************
+`
+user
+ a
+cat user-info '*************'
+at user-info << *************
+`
+user
+ a
+as[=56;87[8i;.;.3;.1q34e,; , cat user-info '*************'
+user
+cat user-info 
+cat > user-info 
+cat user-info 
+ssh 4osowski@taurus "finger mindur" > user-info
+cat >> user-info 
+cat user-info 
+finger -s volejarz >> user-info 
+cat user-info 
+hostname
+ping --help
+ping -c 5 stud206-10.fis.agh.edu.pl 
+ping -c 5 stud206-10.fis.agh.edu.pl > ping
+wget -r http://bobo.fuw.edu.pl/Unix/
+cd ..
+wget wms.mat.agh.edu.pl/~ewao/HP.tar.gz
+wget wms.mat.agh.edu.pl/~ewao/TS.zip
+tar x HP.tar.gz
+gunzip HP.tar.gz
+tree
+tar x HP.tar
+tar fx HP.tar
+tree
+rm HP.tar
+wget wms.mat.agh.edu.pl/~ewao/HP.tar.gz
+tar xzvf HP.tar.gz 
+tree
+unzip TS.zip
+tree
+rm TS.zip
+rm xzvf HP.tar.gz 
+rm HP.tar.gz 
+tree
+zip Ln_Osowski.zip ./*
+tree
+rm Ln_Osowski.zip 
+zip -r Ln_Osowski.zip ./*
+tar czvf Ln_Osowski.tar.gz ./*
+tree
+rm Ln_Osowski.tar.gz 
+tar czvf Ln_Osowski.tar.gz ./ZIP/*
+tar zvfr Ln_Osowski.tar.gz -C ./HP/cw01/*
+tar xvfrz Ln_Osowski.tar.gz -C ./HP/cw01/*
+tar xvfr Ln_Osowski.tar.gz -C ./HP/cw01/
+rm Ln_Osowski.tar.gz 
+tar czvf Ln_Osowski.tar.gz ./ZIP/ ./HP/
+tar tf Ln_Osowski.tar.gz 
+zipinfo Ln_Osowski.zip 
+mc
+mv Ln_Osowski.zip L5_Osowski.zip
+mv Ln_Osowski.tar.gz L5_Osowski.tar.gz 
+cp L5_Osowski.tar.gz  ~ewao/Stud2024/lab5
+cp L5_Osowski.zip  ~ewao/Stud2024/lab5
+history -w lab5.txt
+exit
+jobs
+ps u
+cd Linux-Osowski/lab6
+ps u > procesy1.txt
+ls
+htop
+ps u
+ps u > procesy2.txt
+pkill hop
+pkill nano
+ps u
+pkill nano hop
+kill 2838001
+ps u
+nie mogę zakończyć procesu nano
+kill 2838001
+ps u
+kill 2838186
+kill 2832693
+ps u
+inncyh też nie mogę zkończyć
+ps u > procesy3.txt
+find --help
+find ~ewao/UNIX -mtime -14
+find ~ewao/UNIX -mtime -14 > zad1.txt
+find ~ewao/UNIX -size -100k
+find ~ewao/UNIX -size 100k
+find ~ewao/UNIX -size +100k
+find ~ewao/UNIX -size +100k > zad2.txt
+find ~ewao/UNIX -size -10k -and -size +3k | xargs ls -lh
+find ~ewao/UNIX -size -10k -and -size +3k | xargs ls -lh > zad3.txt
+find /etc -name "config" ! -type d
+find /etc -name "config" ! -type d > zad4.txt 2> arror4.log
+mkdir lab6
+cd lab
+cd lab6
+ps
+ps -ef
+cat > plik
+bg
+ps
+numer to 2832693
+ls -l
+cat plik
+rm plik 
+ps
+fg
+nie ma błędu
+ls -l
+nano& hop
+nano & hop
+nano hop &
+ps
+kill 2835145
+kill 2835194
+kill 2835209
+nano hop &
+ps -f
+kill %1
+ps -f
+kill %2
+kill %3
+ps -f
+ps -aux
+ps -ax
+ps -x
+numer 2832691 status T
+fg
+chmod 777 hop
+./hop
+ps
+zakończył się
+nano hop &
+jobs
+fg
+./hop &
+ls --help
+jobs
+nie widzę
+cd Linux-Osowski/lab6/
+ps u
+ps u > procesy1.txt
+htop
+ps u
+ps u > procesy2.txt
+kill 3009783
+kill 3007152
+ps u
+kill 3007875
+ps u
+nie udało się zakończyć procesu nano
+bg
+jobs
+kill 3007875
+ps u
+nie mogę zakończyć procesu nano
+ps u > procesy3.txt
+find ~ewao/UNIX -mtime -14
+find ~ewao/UNIX -mtime -14 2> /dev/null
+find ~ewao/UNIX -mtime -14 > zad1.txt 2> /dev/null
+find ~ewao/UNIX -size +100k 2> /dev/null
+find ~ewao/UNIX -size +100k > zad2.txt 2> /dev/null
+find ~ewao/UNIX -size -10k -and -size +3k 2> /dev/null
+find ~ewao/UNIX -size -10k -and -size +3k | xargs ls -h 2> /dev/null
+find ~ewao/UNIX -size -10k -and -size +3k | xargs ls -lh 2> /dev/null
+find ~ewao/UNIX -size -10k -and -size +3k | xargs ls -lh > zad3.txt 2> /dev/null
+find /etc ! -type d -name "config" | xargs ls -lh > zad4.txt 2> error4.log
+find /etc ! -type d -name "config" | xargs ls -lh
+ls
+rm error4.log 
+rm zad4.txt 
+find /etc ! -type d -name "config"
+find /etc ! -type d -name "config" > zad4.txt 2> error4.log
+find ~ewao -user 4osowski 2> /dev/null
+mv /home/staff/ewao/Stud2024/lab5/L5_Osowski.zip /home/staff/ewao/Stud2024/lab5/L3_Osowski.zip
+mv /home/staff/ewao/Stud2024/lab5/L5_Osowski.tar.gz /home/staff/ewao/Stud2024/lab5/L3_Osowski.tar.gz
+find ~ewao -user 4osowski 2> /dev/null
+find ~ewao -user 4osowski > zad5.txt 2> /dev/null
+find ~ewao -user 4osowski | xargs zad6.zipgiga nagrywarka 2> /dev/null
+ls
+find ~ewao -user 4osowski | xargs /lab6/zad6.zipgiga nagrywarka 2> /dev/null
+ls
+find ~ewao -user 4osowski 2> dev/null | xargs /lab6/zad6.zipgiga nagrywarka 
+find ~ewao -user 4osowski 2> dev/null | xargs ./zad6.zipgiga nagrywarka 
+find ~ewao -user 4osowski 2> dev/null | xargs zad6.zipgiga nagrywarka 
+find ~ewao -user 4osowski 2> dev/null | xargs zip zad6.zipgiga nagrywarka 
+ls
+find ~ewao -user 4osowski 2> dev/null | xargs zip zad6.zipgiga 
+find ~ewao -user 4osowski 2> /dev/null | xargs zip zad6.zipgiga 
+ls
+rm zad6.zipgiga 
+find ~ewao -user 4osowski 2> /dev/null | xargs zip zad6.zipgiga nagrywarka 
+ls
+find /bin -perm 777 2> error7.log | xargs ls -lh > zad7.txt
+mkdir ZAD8
+cd ZAD8/
+find ~ewao -user 4osowski -name "*.txt" 2> /dev/null | xargs cp {} ./ 
+ls
+find ~ewao -user 4osowski -name "*.txt" 2> /dev/null | xargs -I{} cp {} ./ 
+ls
+whereis dict
+cd ..
+whereis dict > zad9.txt
+find /etc -type d -name "????" ! -name "[b-wA-Z]*"
+find /etc -type d -name "????" ! -name "[b-wA-Z]*" 2> /DEV/NULL
+find /etc -type d -name "????" ! -name "[b-wA-Z]*" 2> /dev/null
+find /etc -type d -name "????" ! -name "[b-wA-Z]*" > lab6/find-3a.txt 2> /dev/null 
+find /etc -type d -name "????" ! -name "[b-wA-Z]*" > find-3a.txt 2> /dev/null 
+find /etc -type l -name "??[1-9]?" 2> /dev/null 
+find /etc -type l -name "*[1-9]?" 2> /dev/null 
+find /etc -type l -name "*[1-9]?" > find-3b.txt 2> /dev/null 
+find /etc \( -type l -name "[?????]" \) -or \( -type d -name "??" -maxdepth 2 \) 2> /dev/null 
+find /etc -type l -name "[?????]" -or \( -type d -name "??" -maxdepth 2 \) 2> /dev/null 
+find /etc \( -type l -name "?????" \) -or \( -type d -name "??" -maxdepth 2 \) 2> /dev/null 
+find /etc \( -type l -name "?????" \) -or \( -type d -name "??" -maxdepth 2 \) > find-3c.txt 2> /dev/null 
+find /etc -type d -name "??" -maxdepth 2 2> /dev/null 
+find /etc -type d -name "?*" -maxdepth 2 2> /dev/null 
+find /etc -type d -name "*" -maxdepth 2 2> /dev/null 
+find /etc -type d -name "?*" -maxdepth 2 2> /dev/null 
+find /etc -type d -name "??*" -maxdepth 2 2> /dev/null 
+find /etc -type d -name "???*" -maxdepth 2 2> /dev/null 
+find /etc -type f -name "[bc]???????*" 2> /dev/null 
+find /etc -type f -name "[bc]???????*" ! -name "*[.-_]*" 2> /dev/null 
+find /etc -type f -name "[bc]???????*" ! -name "*[._-]*" 2> /dev/null 
+find /etc -type f -name "[bc]???????*" ! -name "*[._-]*" > find-3d.txt 2> /dev/null 
+find /etc -type f -type d -name "[a-z]??[0-9]" ! -mtime -365 2> /dev/null | xargs ls -l
+find /etc -type f -type d -name "[a-z]??[0-9]" ! -mtime -365 2> /dev/null | xargs ls -lh
+find /etc -type f -type d -name "[a-z]??[0-9]" ! -mtime -365 2> /dev/null | xargs ls -l
+find /etc -type f -type d -name "[a-z]??[0-9]" ! -mtime -365 2> /dev/null | xargs ls -l {}
+find /etc -type f -type d -name "[a-z]??[0-9]" ! -mtime -365 2> /dev/null | xargs -I{} ls -l {}
+find /etc -type f -type d -name "[a-z]??[0-9]" -mtime +365 2> /dev/null | xargs -I{} ls -l {}
+find /etc -type f -type d -name "[a-z]??[0-9]" -mtime +365 | xargs ls -l
+find /etc -type f -type d -name "[a-z]??[0-9]" -mtime +365 
+find /etc -type fd -name "[a-z]??[0-9]" -mtime +365 
+find /etc -type f -type d -name "[a-z]??[0-9]" -mtime +365 
+find /etc -type f -type d -name "[a-z]??[1-9]" -mtime +365 
+find /etc -type f -type d -name "[a-z]??[0-9]" -mtime +365 
+find /etc -type f -type d -name "[a-z]*" -name "*[0-9]" -name "????" -mtime +365 
+find /etc -type f -type d -name "[a-z]*" -name "*[0-9]" -mtime +365 
+find /etc -type d -maxdepth 1
+find /etc -name "app*" -maxdepth 1
+find /etc/apparmor.d -name "????" -maxdepth 1
+find /etc/apparmor.d -name "????" 
+find /etc/apparmor.d -type f -type d -name "[a-z]*" -name "*[0-9]" -mtime +365 
+find /etc/apparmor.d -type f -or -type d -name "[a-z]*" -name "*[0-9]" -mtime +365 
+find /etc/apparmor.d -type f -or -type d -name "[a-z]??[0-9]" -mtime +365 
+find /etc/apparmor.d \( -type f -or -type d \) -name "[a-z]??[0-9]" -mtime +365 
+find /etc \( -type f -or -type d \) -name "[a-z]??[0-9]" -mtime +365 
+find /etc \( -type f -or -type d \) -name "[a-z]??[0-9]" -mtime +365 2> /dev/null
+find /etc \( -type f -or -type d \) -name "[a-z]??[0-9]" -mtime +365 > find-3e.txt 2> /dev/null
+tree > tree.txt
+history --help
+history -w lab6.txt

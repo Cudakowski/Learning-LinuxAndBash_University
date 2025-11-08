@@ -1,0 +1,84 @@
+mkdir Linux-Osowski
+cd Linux-Osowski/
+mkdir lab3
+cd lab3
+mkdir -pv K1/K2
+tree
+touch K1/a
+tree
+cp K1/a K2/b
+cp K1/a K1/K2/b
+tree
+touch -t 202409130920 K1/a
+stat K1/a
+mkdir K3
+cp K1/* K3/
+cp -r  K1/* K3/
+tree
+ls -l K3
+ls -lR K3
+tree
+tree > tree1
+tree
+rm -r K1/
+tree
+cp -rs ~ewao/Linux-lab3 K3/
+tree
+rm -r K3/Linux-lab3/
+tree
+cp -r ~ewao/Linux-lab3 K3/
+tree
+mv K3/Linux-lab3 K3/Linux
+tree
+cp -rs K3/Linux/Fonts/* K3/
+tree
+cp -s K3/Linux/Fonts/* K3/
+tree
+cp -l K3/Linux/Fonts/* K3/
+tree
+rm K3/45-latin.conf 
+rm K3/69-unifont.conf 
+tree
+cp K3/Linux/Fonts/* K3/
+tree
+cd K3/
+rm 45-latin.conf 
+rm 51-local.conf 
+rm 60-latin.conf 
+rm 69-unifont.conf 
+cd ..
+tree
+cp -d K3/Linux/Fonts/* K3/
+tree
+ls -l K3/
+mv K3/K2/b K3/K2/c
+tree
+mv K3 K1
+tree
+mv -r K1/Linux/ ./
+mv  K1/Linux ./
+tree
+mv Linux/A/a.sh ./
+mv Linux/A/a]b.sh ./
+mv Linux/A/b.sh ./
+tree
+mv K1/a ./
+tree
+cp -b b.sh a.sh 
+tree
+touch -t b.sh 202409131111
+history
+touch -t 202409131111 b.sh 
+stat b.sh 
+tree .. > 3_Osowski_tree.txt
+tree
+rm 3_Osowski_tree.txt 
+tree
+tree .. > L3_Osowski_tree.txt
+cp L3_Osowski_tree.txt ~ewao/Stud2024
+ls -lh > L3_Osowski_Is.txt
+cp L3_Osowski_Is ~ewao/Stud2024
+cp L3_Osowski_Is.txt ~ewao/Stud2024
+cat L3_Osowski_Is.txt 
+cat L3_Osowski_tree.txt 
+history -w lab3.txt

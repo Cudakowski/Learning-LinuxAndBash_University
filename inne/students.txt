@@ -1,0 +1,3 @@
+Ala Mak 1 4 5 1 0
+Ola Bak 2 3 4 3 6
+Kala Cak 3 2 4 4 3

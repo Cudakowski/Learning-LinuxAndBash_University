@@ -1,0 +1,7 @@
+find: ‘/etc/polkit-1/localauthority’: Permission denied
+find: ‘/etc/salt/pki/minion’: Permission denied
+find: ‘/etc/docker’: Permission denied
+find: ‘/etc/ppp/peers’: Permission denied
+find: ‘/etc/chatscripts’: Permission denied
+find: ‘/etc/ssl/private’: Permission denied
+find: ‘/etc/sssd’: Permission denied

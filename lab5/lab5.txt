@@ -1,0 +1,133 @@
+mkdir ZIP
+cd ZIP/
+hostname > users
+date --help
+date
+date '%D'
+date '+%D'
+date '+%x'
+date '+%x' >> users 
+id
+id --help
+id -u
+id -u >> users 
+ssh 4osowski@tourus.agh.edu.pl "users" >> users 
+ssh 4osowski@taurus.agh.edu.pl "users" >> users 
+ssh 4osowski@taurus "users" >> users 
+ssh 4osowski@taurus "users"
+cd ..
+rmdir -r ZIP/
+rmdir --h
+rmdir -ignore-fail-on-non-empty ZIP/
+rmdir --ignore-fail-on-non-empty ZIP/
+tree
+rmdir -p ZIP/
+rmdir -p-ignore-fail-on-non-empty ZIP/
+rm ZIP/users
+rmdir ZIP/
+mkdir ZIP
+cd ZIP/
+hostname > users
+date >> users 
+id -u >> users 
+ssh 4osowski@taurus "users" >> users 
+nano
+nano users 
+finger -s Ewa Olejarz
+finger -s Ewa_Olejarz
+finger -s "Ewa Olejarz"
+finger -s ,Ewa Olejarz'
+finger -s 'Ewa Olejarz'
+finger -s ewaoo
+finger -s ewao
+finger -s volejarz
+ssh 4osowski@taurus "finger mindur" > user-info
+cat --help
+cat user-info 
+cat ************* >> user-info 
+cat '*************' >> user-info 
+cat "*************" >> user-info 
+cat  user-info *************
+cat user-info 
+rm user-info 
+ssh 4osowski@taurus "finger mindur" > user-info
+cat user-info 
+cat user-info "*************"
+cat user-info '*************'
+cat user-info << *************
+
+`
+
+user
+
+ a
+cat user-info '*************'
+
+
+at user-info << *************
+
+`
+
+user
+
+ a
+as[=56;87[8i;.;.3;.1q34e,; , cat user-info '*************'
+
+
+user
+
+
+
+cat user-info 
+cat > user-info 
+cat user-info 
+ssh 4osowski@taurus "finger mindur" > user-info
+cat >> user-info 
+cat user-info 
+finger -s volejarz >> user-info 
+cat user-info 
+hostname
+ping --help
+ping -c 5 stud206-10.fis.agh.edu.pl 
+ping -c 5 stud206-10.fis.agh.edu.pl > ping
+wget -r http://bobo.fuw.edu.pl/Unix/
+cd ..
+wget wms.mat.agh.edu.pl/~ewao/HP.tar.gz
+wget wms.mat.agh.edu.pl/~ewao/TS.zip
+tar x HP.tar.gz
+gunzip HP.tar.gz
+tree
+tar x HP.tar
+tar fx HP.tar
+tree
+rm HP.tar
+wget wms.mat.agh.edu.pl/~ewao/HP.tar.gz
+tar xzvf HP.tar.gz 
+tree
+unzip TS.zip
+tree
+rm TS.zip
+rm xzvf HP.tar.gz 
+rm HP.tar.gz 
+tree
+zip Ln_Osowski.zip ./*
+tree
+rm Ln_Osowski.zip 
+zip -r Ln_Osowski.zip ./*
+tar czvf Ln_Osowski.tar.gz ./*
+tree
+rm Ln_Osowski.tar.gz 
+tar czvf Ln_Osowski.tar.gz ./ZIP/*
+tar zvfr Ln_Osowski.tar.gz -C ./HP/cw01/*
+tar xvfrz Ln_Osowski.tar.gz -C ./HP/cw01/*
+tar xvfr Ln_Osowski.tar.gz -C ./HP/cw01/
+rm Ln_Osowski.tar.gz 
+tar czvf Ln_Osowski.tar.gz ./ZIP/ ./HP/
+tar tf Ln_Osowski.tar.gz 
+zipinfo Ln_Osowski.zip 
+mc
+mv Ln_Osowski.zip L5_Osowski.zip
+mv Ln_Osowski.tar.gz L5_Osowski.tar.gz 
+cp L5_Osowski.tar.gz  ~ewao/Stud2024/lab5
+cp L5_Osowski.zip  ~ewao/Stud2024/lab5
+history -w lab5.txt

@@ -1,0 +1,23 @@
+dict: /usr/share/dict
+--first 5---
+A
+AA
+AAA
+AA's
+AB
+--last 6---
+zucchinis
+zwieback
+zwieback's
+zygote
+zygote's
+zygotes
+---------------
+  File: /usr/share/dict/words -> /etc/dictionaries-common/words
+  Size: 30        	Blocks: 0          IO Block: 4096   symbolic link
+Device: 8,3	Inode: 4222574     Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2024-11-18 10:05:06.551021895 +0100
+Modify: 2023-09-28 21:20:36.459993665 +0200
+Change: 2023-09-28 21:20:36.459993665 +0200
+ Birth: 2023-09-28 21:20:36.459993665 +0200

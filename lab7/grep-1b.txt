@@ -1,0 +1,4 @@
+plik1.txt:1 	jeden 
+plik1.txt:31 	trzydzieści jeden 
+plik2.txt:11 Eleven 
+plik2.txt:7 Seven

@@ -1,0 +1,39 @@
+mkdir lab6
+cd lab6
+ps
+ps aux
+cat > plik
+bg
+ps
+numer to 3005400
+ls
+utowrzył się
+cat plik
+rm plik 
+fg
+nie widzę żadnego błędu
+ls
+pliku też nie widzę
+ps
+proces zniknął
+nano hop &
+ps -x
+ma numer 3005897 i status T
+fg
+chmod 777 hop
+./hop
+./hop &
+ps -x
+mają numery 3007152 i 3007181, pierwszy ma status T a drugi S
+jobs
+bg
+jobs
+fg
+ps
+zakończył się
+nano hop &
+fg
+./hop &
+jobs
+bg
+history -w lab61.txt

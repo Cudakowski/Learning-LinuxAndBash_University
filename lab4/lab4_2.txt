@@ -1,0 +1,128 @@
+cat lab4.txt 
+ls -l
+ls -lR
+rm K1/a
+ls -lR
+chmod -R u+rwx ./
+ls -lR
+mask
+umask
+umask --help
+umask 622
+umask -S
+umask 733
+umask -S
+umask 337
+umask -S
+touch uneditable
+umask 0022
+ls -lR
+ln K2/a a_hrd
+ln K2/a a_hrd2
+ln -s K2/a a_lnk
+ls -l
+cp a_hrd a_cp
+ls -lR
+ls -l K2/a
+ls -l a_cp
+ls -l a_hrd
+ls -l a_hrd2
+ls -l a_lnk
+rm a_cp
+ls -l a_lnk
+ls -l a_hrd2
+ls -l a_hrd
+ls -l K2/a
+cp a_hrd a_cp
+ls -l K2/a
+ls -l a_hrd
+ls -l a_hrd2
+ls -l a_lnk
+ls -l a_cp
+no_ja_nie_widze_zeby_ulegla_zmianie
+cat >> K2/a
+cat >> a_hrd
+ls -lR
+./a_hrd2
+./a_lnk
+cp a_lnk a_lnk2
+cp -d a_lnk a_lnk3
+ls -lR
+mv K2/a K2/K22/
+tree
+cat a_lnk
+cat a_hrd
+ls -lR
+ln --help
+ln K2/K22/a a_lnk
+ln -sf K2/K22/a a_lnk
+ln -sf ~/K2/K22/a a_lnk3
+ls -lR
+ln -sf ~K2/K22/a a_lnk3
+ls -lR
+ln -sf ~/K2/K22/a a_lnk3
+ls -lR
+ln -sf ~/Linux-Osowski/lab4/K2/K22/a a_lnk3
+ls -lR
+mv a_* LN/
+ls -l LN
+ln K2 LN/Ka2
+ln -s K2 LN/Ka2
+ls -l LN
+ln -sf K2 ~/LN/Ka2
+ln -sf K2 ~/Linux-OsKa2
+ls -l LN
+ln -sf ~/Linux-Osowski/lab4/K2 LN/Ka2
+ls -l LN
+ln -f ~/Linux-Osowski/lab4/K2 LN/Ka2
+ls -l LN
+ls LN/Ka2
+ls -l LN/Ka2
+cd LN/Ka2
+ls
+tree
+cd ..
+tree
+cd ..
+cp ~ewao/Linux-lab4/kotek.lnk LN/motylek.lnk
+cp -s ~ewao/Linux-lab4/kotek2.lnk LN/motylek2.lnk
+tree
+rm LN/motylek.lnk
+cp -s ~ewao/Linux-lab4/kotek.lnk LN/motylek.lnk
+tree
+cat LN/motylek.lnk
+cat LN/motylek2.lnk
+LN/motylek2.lnk
+LN/motylek.lnk
+no ja nie rozumiem
+nie wyskakuje mi zaden blad
+ls -lR
+ln 
+ln ~ewao/Linux-lab4/Lista-l3 LN/lista_hrd
+ln ~ewao/Linux-lab4/lista-l3 LN/lista_hrd
+ls -lR
+cat >> LN/lista_hrd
+ls -lR
+tyle samo 
+ln /bin/zcat LN/zcat
+ln -s /bin/zcat LN/zcat
+no możliwe jest tylko dowiązanie symboliczne
+ls -lAhR > L3_Osowski.txt
+tac --help
+tree .. > tree.txt
+tree
+cat L3_Osowski.txt tree.txt 
+tree
+cat L3_Osowski.txt 
+cat L3_Osowski.txt >> tree.txt 
+cat L3_Osowski.txt 
+cat tree.txt 
+rm tree.txt 
+tree .. > tree.txt
+cat tree.txt >> L3_Osowski.txt 
+cat L3_Osowski.txt 
+cp L3_Osowski.txt ~ewao/Stud2024/lab4/
+cp L3_Osowski.txt ~ewao/Stud2024/lab4
+cp L3_Osowski.txt ~ewao/Stud2024
+history -2 lab4_2.txt
+history -w lab4_2.txt

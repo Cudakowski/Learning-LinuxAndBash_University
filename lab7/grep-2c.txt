@@ -1,0 +1,10 @@
+ 18:08:35 up 20:37, 10 users,  load average: 1.26, 1.48, 1.58
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0kasinsk pts/0    91.230.99.64     15:56   24:51   2.04s  1.93s ssh -X lab3@172.30.254.133 -o HostKeyAlgorithms=+ssh-dss,ssh-rsa
+4osowski pts/2    192.168.102.216  17:55    3.00s  0.40s  0.22s ssh 4osowski@taurus.fis.agh.edu.pl w | grep -v '\s\-bash' > ~/Linux-Osowski/lab7/grep-2c.txt
+6hajduga pts/5    2001:6d8:10:4400 13:31    3:36m  8:31   8:31  htop
+2dyrek   pts/6    192.168.67.177   15:58    1:18m  0.43s  0.10s vim plot_3.py
+krawczyk pts/18   2a02:a31a:a2f1:d 09:44    2:12m  2.55s  2.49s ssh gos@172.30.0.199
+fiutowsk pts/34   2001:6d8:10:4400 12:47    5:18m 26.61s 26.55s ssh -X 172.20.221.229
+2wlodek  pts/8    80.49.250.48     18:07   19.00s  0.28s  0.22s ssh -Y 2wlodek@stud204-11.fis.agh.edu.pl
+9

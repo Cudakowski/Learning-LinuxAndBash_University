@@ -1,0 +1,3 @@
+   75  cp ~ewao/Linux-lab7/plik[12] ./
+   76  cat plik2 | tr -s ' ' > plik2.txt
+   77  history | tail -n 3 > zad3.txt

@@ -1,0 +1,57 @@
+umask -S
+mkdir K1 K2 LN
+ls -l
+cd K1
+cat > a
+cd ..
+chmod 000 K1/a
+chmod 000 *
+ls -ld
+ls -ld K1
+chmod a+r K1
+ls -ld K1
+chmod a-r K1
+chmod a+x K1
+cd K1
+cd ..
+chmod ug+r K1
+chmod ug+r K1/a
+chmod u+x K1
+chmod u+x K1/a
+cat >> a
+cat a
+ajaj
+cat >> a
+ls -lR
+rm a
+cat >> K1/a
+chmod u+w K1/a
+cat >> K1/a
+cat K1/a
+K1/a
+cd K
+cd K1
+./a
+cd ..
+K1/a > wynik-a
+tree
+chmod 100 K2
+mkdir K2/K22
+chmod 200 K2
+mkdir K2/K22
+chmod 400 K2
+mkdir K2/K22
+chmod 700 K2
+mkdir K2/K22
+rmdir K2/K22
+chmod 300 K2
+mkdir K2/K22
+cp K1/a K2/a
+cp K1/a K1/aa
+ls -ld
+ls -lR
+chmod 711 K1
+ls -lR
+cp K1/a K1/aa
+history --help
+history -w lab4.txt

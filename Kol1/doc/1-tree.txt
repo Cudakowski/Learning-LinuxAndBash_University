@@ -1,0 +1,8 @@
+.
+├── doc
+│   ├── 1-tree.txt
+│   └── temp
+└── zip
+    └── pliki
+
+5 directories, 1 file

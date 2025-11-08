@@ -1,0 +1,1 @@
+tar cvf L3_Osowski.tar 1[1-6] 2[1-9] 3 3.awk s8.awk s9.sh eh.txt

@@ -1,0 +1,500 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-2"><title>Ewa Klusek - Systemy Operacyjne, AWK i SED</title></head>
+
+<body alink="#ff0000" bgcolor="#FFFFCO" link="#0000ff" text="#330000" vlink="#663366">
+<h2><span><p align="center">AWK i SED</p></span></h2>
+<p><span><p align="justify">Unix zawiera wiele programów
+umożliwiających automatyczne przetwarzanie tekstów. Polega ono na
+przygotowaniu skryptu (pliku z poleceniami) oraz poinstruowaniu
+programu automatycznego przetwarzania tekstu żeby kolejno wykonywał
+skrypt podczas odczytywania. &nbsp;
+W rezultacie plik tekstowy jest redagowany i przetwarzany zgodnie z
+wydanymi instrukcjami. Programami takiego właśnie typu są <b><a href="#sed">sed</a></b> i <b><a href="#awk">awk</a></b>.</p> </span>
+</p> 
+<br>
+<h3><span><a name="sed"><p align="center">SED</p></a></span></h3>
+<p><span>
+<p>1. Co to takiego?</p><p></p>
+
+<p align="justify"><b>Sed</b> to strumieniowa wersja edytora <b>ed</b>. Operuje on na plikach lub strumieniach danych uzyskiwanych ze standardowego wejścia. Sama jego nazwa pochodzi od <i>stream editor</i> (edytor strumieniowy).</p> <p></p>
+
+Najbardziej typowymi zastosowaniami tego programu są: <br>
+- automatyczna edycja jednego lub większej liczby plików; <br> 
+- upraszczanie powtarzających się operacji na wielu plikach; <br>
+- pisanie programów konwertujących.<p></p>
+
+<p align="justify"><b>Sed</b> wykonuje zadania w prosty, bezpośredni
+sposób - odczytuje jednorazowo po jednej linii ze standardowego
+wejścia, wykonuje na tym wierszu serię czynności edytujących,
+wyprowadza go na standardowe wyjście, po czym odczytuje kolejną linię.</p>
+
+2. Schemat konstrukcji wywołania: 
+<br>
+<p align="center"><b>sed  [-n]  [-e  polecenie]  [-f  plik_skryptu]  nazwa_pliku1  nazwa_pliku2 ..... </b></p> <p></p>
+
+<p align="justify">Brak nazwy pliku wejściowego spowoduje pobieranie danych ze standardowego wejścia. </p><p></p></span></p>
+
+<p align="justify">Program sed można uruchomić z następującymi opcjami: <br>
+<b>-n</b> - powoduje, że po wykonaniu czynności edytujących wiersz
+domyślnie nie będzie wyprowadzany na standardowe wyjście - zostaną na
+nie przekazane tylko te wiersze dla których jawnie wykonano komendę <b>p</b> (print) lub komendę <b>s</b> z parametrem <b>p</b>; <br>
+<b>-e</b>	- następny argument to polecenie edycyjne; <br>
+<b>-f</b>	- następny argument jest nazwą skryptu (pliku zawierającego polecenia edycyjne); </p><p></p>
+
+Przykład wywołania: <p></p>
+
+<p align="center">	<b>&gt;sed  's/abc/xyz/g' nazwa_pliku</b></p>
+
+<p align="justify">Zamieni (komenda <b>s</b>) wszystkie pojawienia się 'abc' na 'xyz'; <b>g</b> gwarantuje zamianę wszystkich wystąpień w linii a nie tylko jednego.</p> 
+<br>
+3. Składnia poleceń i wyrażenia regularne: <p></p>
+
+<p align="justify">Polecenia edytora <b>sed</b> są jednoliterowe i mogą być poprzedzone zakresem ich działania w następujący sposób: <br>
+
+- podanie samej komendy sprawi, że będzie ona wykonywana dla każdej linii pliku wejściowego; <br>
+
+- jeśli zostanie podany jeden adres, program wykona polecenia tylko dla linii o tym  adresie; <br>
+
+- podanie dwóch adresów spowoduje wykonanie polecenia od linii o adresie podanym jako pierwszy, do linii o adresie drugim; <br>
+
+- jeśli po adresie wystąpi wykrzyknik, polecenie zostanie wykonane dla wszystkich linii poza podaną. </p><p></p>
+
+<p align="justify">Adresem linii może być numer linii, a także wyrażenie regularne umieszczone pomiędzy dwoma znakami <b>'/'</b>. Wyrażenia regularne są to wzory wyszukiwania. Zawierają one znaki zwykłe oraz metaznaki (czyli znaki specjalne). </p><p></p>
+
+
+Najpopularniejsze WYRAŻENIA REGULARNE używane w <b>sed</b>: <p></p>
+
+-  <b>' ^ '</b> oznacza dopasowywanie na początku linii, np.: <br>
+
+<b>&gt;sed 's/^abc/xyz/' nazwa_pliku</b><br>
+
+tym poleceniem <b>sed</b> zamieni 'abc' na 'xyz' ale tylko na początku każdej z linii; <p></p>
+
+-	<b>' $ '</b> oznacza dopasowanie na końcu linii, np.:  <br>
+
+<b>&gt;sed 's/ $//' nazwa_pliku</b> <br>
+
+tym poleceniem <b>sed</b> zlikwiduje spacje na końcu każdej z linii; <p></p>
+
+-	<b>' . '</b> oznacza dowolny znak (oprócz znaku początku i końca linii); <p></p>
+
+-	<b>' [ ] '</b>
+oznaczają "dopasuj jeden, dowolny znak z ciągu znaków" co bywa pomocne
+np. jeśli się nie wie czy dany wyraz został napisany wielką, czy mała
+literą: <br>
+
+<b>&gt;sed 's/[Aa]b[Cc]/abc/g' nazwa_pliku </b> <br>
+
+to polecenie zamieni nam wyrazy: 'Abc', 'abC' oraz 'AbC' na 'abc'; <p></p>
+
+-	<b>' - '</b> użyte wewnątrz nawiasów pozwala na objęcie wszystkich znaków znajdujących się w tabeli ASCII pomiędzy podanymi, np.: <br>
+
+<b>&gt;sed 's/[a-e]bc/abc/g' nazwa_pliku</b> <br>
+zamieni wszystkie wyrazy zaczynające się na 'a', 'b', 'c', 'd' lub 'e'
+a następnie 'bc' (czyli: 'abc', 'bbc', 'cbc', 'dbc' i 'ebc') na 'abc'; <p></p>
+
+-	<b>' ^ '</b> użyte wewnątrz nawiasów odwraca znaczenie wyrażenia wewnątrz (dopasuje dowolny znak oprócz podanych), np.: <br>
+
+<b>&gt;sed 's/a[^aeiouy]c/abc/g' nazwa_pliku </b> <br>
+
+zamieni każdy wyraz którego pierwsza litera to 'a', druga litera nie jest samogłoską, a trzecia litera to 'c' na 'abc'; <p></p>
+
+-	<b>' * '</b> oznacza jakąkolwiek ilość wystąpień poprzedniego znaku; <p></p>
+
+-	<b>' .* '</b> oznacza jakąkolwiek ilość wystąpień jakiegokolwiek znaku, np.: <br>
+
+<b>&gt;sed 's/a.*bc/abc/g' nazwa_pliku  </b> <br>
+
+jeśli w linii będzie np.: 'aPQRSTbc' to zostanie zamienione na 'abc'; <p></p>
+
+-	<b>' \ '</b> - cytuje, czyli ignoruje znaczenie specjalne występującego po nim znaku; <p></p>
+
+
+POLECENIA EDYTORA: <p></p>
+
+  Polecenia edycji podstawowej:<br>
+-	<b>a\ tekst1</b>  - dodawanie tekstu 'tekst1' za wierszem; <br>
+-	<b>i\ tekst1</b>  - wstawienie tekstu 'tekst1' przed wierszem; <br>
+-	<b>c\ tekst1</b>  - zastąpienie bieżącej zawartości bufora tekstem z następnej linijki; <br>
+-	<b>d</b>  - usunięcie wierszy; <br>
+-	<b>s/tekst1/tekst2</b>  - zastąpienie tekstu 'tekst1' tekstem 'tekst2' (aby sterować funkcją s stosujemy opcje: <br>
+		* <b>g</b>
+(global) - jeśli chcemy aby funkcja wykonała podstawienie nie tylko dla
+pierwszego znalezionego wystąpienia (jak się to dzieje standardowo),
+ale dla każdego; <br>
+		* <b>n</b> - gdzie n będące liczbą sprawi, że podstawienie zostanie wykonane tylko dla n-tego wystąpienia; <br>
+		* <b>p</b> (print) - powoduje wypisanie linii jeśli wystąpi podstawienie; <br>
+-	<b>y/s1/s2</b>  - zamiana liter z łańcucha 's1' na odpowiadające im litery z łańcucha 's2'; <p></p>
+
+  Informacja o wierszu: <br>
+-	<b>=</b>  - wyświetlenie numeru wiersza; <br>
+-	<b>p</b>  - wyświetlenie wiersza; <p></p>
+
+<p align="justify">Funkcje operujące na wielu linijkach: <br>
+	Normalnie <b>sed</b>
+analizuje dane wejściowe linijka po linijce przechowując je w
+przestrzeni wzorca osobno. Poniższe funkcje potrafię to zmienić i
+przechowywać na raz większą ich kopię. Zmieniają się wówczas niektóre
+mechanizmy - znak '^' na przykład zaczyna oznaczać początek przestrzeni
+wzorca, a znak '$' analogicznie - koniec przestrzeni wzorca:<br>
+-	<b>N</b> (Next) - dodanie do przestrzeni wzorca kolejnego wiersza - są one oddzielone znakiem nowej linii; <br>
+-	<b>D</b>
+(Delete) - funkcja usuwa pierwszą niepustą linię znajdującą się w
+przestrzeni wzorca, po czym wczytuje następną i ustawia się na pierwsze
+polecenie w skrypcie; <br>
+-	<b>P</b> (Print) - wyświetla zawartość przestrzeni wzorca;</p>
+  
+Przetwarzanie wejścia i wyjścia: <br>
+-	<b>n</b> - pominięcie wiersza (odczytanie następnego); <br>
+-	<b>r</b> - odczytanie treści innego pliku i skierowanie jej na wyjście; <br>
+-	<b>w</b> - zapisanie wierszy wejścia do innego pliku; <br>
+-	<b>q</b> - wyjście ze skryptu programu sed;<p></p>
+
+  Operacje z wykorzystaniem buforów: <br>
+-	<b>h</b> - skopiowanie do obszaru przechowywania przy równoczesnym zastąpieniu znajdujących się w nim danych; <br>
+-	<b>H</b> - skopiowanie do obszaru przechowywania przy czym następuje dopisanie danych do danych znajdujących się już w buforze; <br>
+-	<b>g</b> - przywrócenie danych z obszaru przechowywania przy równoczesnym zastąpieniu wiersza docelowego; <br>
+-	<b>G</b> - przywrócenie danych z obszaru przechowywania i dopisanie ich do obszaru wzoru; <br>
+-	<b>x</b> - wymiana zawartości przestrzeni przechowywania i wzoru; <p></p>
+
+  Polecenia skoków: <br>
+-	<b>b</b> - przejście do etykiety bądź końca skryptu; <br>
+-	<b>t</b> - przejście do etykiety bądź końca skryptu jedynie po udanej zamianie; <br>
+-	<b>:etykieta</b> - określa miejsce do którego mogą się odnosić polecenia <b>b</b> i <b>t</b>; <p></p>
+
+Komentarz w skryptach <b>seda</b> zaczyna się znakiem '#' i trwa do końca linii, chyba, że linia kończy się '\' to komentarz przedłuża się na następną linię. <p></p>
+
+
+4. Zastosowanie edytora <b>sed</b>: <p></p>
+
+a).   <b> &gt;sed -n '12,47p' plik1.txt</b> <br>
+
+<p align="justify">to polecenie wyświetli na ekranie linie od 12 do 47 z pliku o nazwie plik1.txt;</p>
+
+b).    <b>&gt;sed -n '12,$p' plik1.txt</b> <br>
+
+<p align="justify">to polecenie wyświetli na ekranie linie od 12 do ostatniej z pliku o nazwie plik1.txt;</p>
+
+c).    <b>&gt;sed -n '/abc/,/xyz/p' plik1.txt</b> <br>
+
+<p align="justify">wyświetli na ekranie wszystkie linie pliku plik1.txt
+począwszy od linii zawierającej słowo 'abc', skończywszy na linii
+zawierającej 'xyz' - jeśli w tekście będzie ich więcej, wyświetli każde;</p>
+
+d).    <b>&gt;sed -n '/^abc/p' plik1.txt</b> <br>
+
+<p align="justify">wyświetli na ekranie wszystkie linie zaczynające się słowem 'abc' z pliku plik1.txt;</p>
+
+e).    <b>&gt;sed -n '12,47s/abc/xyz/g' plik1.txt &gt; plik2.txt</b> <br>
+
+<p align="justify">polecenie to zmodyfikuje linie od 12 do 47 pliku
+plik1.txt, zamieniając wszystkie w linii (opcja g polecenia s)
+wystąpienia słowa 'abc' na 'xyz' i zapisze zmodyfikowane wiersze (opcja
+-n) w pliku plik2.txt</p>;
+
+f).    <b>&gt;sed '2,$s/#.*//' skrypt.sh</b> <br>
+
+<p align="justify">to polecenie spowoduje usunięcie wszystkich komentarzy z pliku skrypt.sh, za wyjątkiem pierwszej linii;</p>
+
+g).    <b>&gt;sed 's/[0-9][0-9]*/(&amp;)/g' plik1.txt</b> <br>
+
+<p align="justify">to polecenie sprawi, że wszystkie liczby w pliku plik1.txt zostaną umieszczone w nawiasach;</p>
+
+h).    <b>&gt;sed 's/[Aa]bc\([a-zA-Z][a-zA-Z]*\)/xyz\1/g' plik1.txt</b> <br>
+
+<p align="justify">to polecenie sprawi, że jeśli w pliku plik1.txt są
+wyrazy rozpoczynające się przedrostkiem 'abc' lub 'Abc' to ten
+przedrostek zostanie zamieniony na 'xyz' przy czym reszta wyrazu nie
+ulegnie zmianie;</p>
+
+i).    <b>&gt;sed -f  program.sed plik1.txt</b> <br>
+<br>
+/begin/,/end/ {<br>
+s/real/double/g {<br>
+p{<br>
+s/integer/longint/g{<br>
+p{<br>
+}
+<p align="justify">polecenia dla programu sed są zawarte w jego
+skrypcie - program.sed; komendy umieszczone w nawiasach będą wykonywane
+dla wszystkich linii począwszy od linii zawierającej słowo 'begin' aż
+do linii zawierającej słowo 'end'</p>
+
+<br>
+<h3><span><a name="awk"><p align="center">AWK</p></a></span></h3>
+<p>1. Co to takiego? <br>
+
+</p><p align="justify"><b>Awk</b> to interpretowany język programowania
+zorientowany na poszukiwanie wzorców i przetwarzanie tekstów. Wiele z
+jego konstrukcji jest zaczerpnięte z C oraz <b>seda</b>. Dostarcza on
+sposobu do budowania narzędzi, za pomocą których zadania zostaną
+rozwiązane bez potrzeby uciekania do bardziej złożonych języków
+programowania. <br>
+Sama nazwa pochodzi od nazwisk jego twórców: Alfreda V. <b>A</b>ho , Petera J. <b>W</b>einbergera i Briana W. <b>K</b>ernighana.<br>
+Nowsze wersje <b>awka</b> to <b>nawk</b> i <b>gawk</b> - posiadają one własne, rozszerzone w stosunku do awka możliwości operacji na tekście. </p>
+
+<p align="justify">Przy pomocy <b>awka</b> można: <br>
+- przeprowadzać operacje na ciągach znaków; <br>
+- przeprowadzać operacje arytmetyczne; <br>
+- traktować pliki tekstowe jako zawierające pola i rekordy tekstowe bazy danych; <br>
+- korzystać z pętli i konstrukcji warunkowych;</p>
+
+<p align="justify">Wykonanie programu <b>awk</b> polega na sekwencyjnym
+przetwarzaniu porcji danych wejściowych (zwanych rekordami -
+standardowo jest to pojedyncza linia tekstu). Zasada działania jest
+więc podobna do <b>seda</b> - wczytywany jest jeden rekord, wykonywane
+są na nim wszystkie instrukcje programu, po czym wczytywany jest rekord
+kolejny. Rekordy są standardowo rozdzielone znakami końca linii, każdy
+rekord składa się z pól oddzielonych od siebie znakami spacji lub
+tabulacji. $1 oznacza pole pierwsze, $2 - pole drugie itd. $0 oznacza
+całą linię, zmienna <b>NF</b> przechowuje liczbę pól bieżącego
+rekordu, tak więc $NF to zmienna zawierająca wartość ostatniego pola
+danego rekordu. Na przykład poniższy fragment składa się z trzech
+rekordów, pierwszy zawiera dwa pola, drugi - sześć, a trzeci - cztery
+pola: <br>
+<br>
+rekord pierwszy <br>
+pole pole pole pole pole pole <br>
+a to rekord trzeci <br>
+<br>
+W rekordzie: <br>
+<br>
+abc def ghi jkl mno <br>
+<br>
+$1 ma wartość 'abc',  $4  i  $(NF-1) mają wartość 'jkl'.</p>
+<br>
+
+<p align="justify">2. Schemat konstrukcji wywołania: <br>
+<br>
+<b>Awka</b> można wywołać na dwa sposoby. Jeśli program jest krótki,
+najlepiej umieścić pomiędzy znakami pojedynczego cudzysłowia w linii
+poleceń np.: <br>
+<br>
+<b>&gt;awk  'tekst_skryptu'  nazwa_pliku1  nazwa_pliku2 .....</b>
+<br>
+<br>
+Jeśli program jest długi, najlepiej jest wpisać go do pliku i uruchamiać z opcją <b>-f</b> <br>
+<br>
+<b>&gt;awk  -f  nazwa_skryptu  nazwa_pliku1  nazwa_pliku2 .....</b> <br>
+<br>
+Brak nazwy pliku lub podanie ' - ' powoduje odczytywanie ze standardowego wejścia. <br>
+<br>
+Program <b>awk</b> można uruchomić z następującymi opcjami: <br>
+-<b>f  nazwa_pliku</b>	- powoduje uruchamianie programu źródłowego z pliku; <br>
+-<b>F sp</b>			- separatorem pól będzie sp (bez tej opcji separatorem będzie spacja lub tabulacja); <br>
+-<b>v zm=war</b>		- przypisuje zmiennej zm wartość war przed rozpoczęciem wykonania programu;</p>
+<br>
+
+<p align="justify">3. Struktura programu <b>awk</b>: <br>
+<br>
+Program dla <b>awka</b> wygląda następująco: <br>
+<br>
+<b>warunek  {  polecenie1 <br>
+                    polecenie2  <br>
+                         .....  <br> 
+                  polecenieN  } <br></b>
+<br>
+lub (jeśli chcemy wypisać polecenia w jednej linii): <br>
+<br>
+<b>warunek  {  polecenie1 ; polecenie2 ; ..... ; polecenieN  }</b> <br>
+<br>
+Warunek to wyrażenie logiczne. Jeśli jego wartość jest prawdziwa,
+wykonywany jest ciąg poleceń (polecenia muszą zaczynać się w tej samej
+linijce co warunek). <br>
+<br>
+W WARUNKACH mogą wystąpić: <br>
+- wyrażenia regularne - mogą się składać z umieszczonych w cytatach
+ciągów znaków, liczb, operatorów, funkcji, zdefiniowanych zmiennych
+oraz predefiniowanych zmiennych wbudowanych; mogą występować metaznaki
+takie jak: <b>' ^ '</b> oraz <b>' $ '</b>; <br>
+- wyrażenia relacyjne - stosuje się w nich operatory relacyjne przy
+pomocy których możemy porównać zarówno liczby jak i ciągi znaków; <br>
+- operator pasowania do wyrażeń regularnych <b>' ~ '</b> (zgodne) i <b>' !~ '</b> (niezgodne); <br>
+- <b>BEGIN</b> i <b>END</b>
+- używając pierwszego z nich określamy polecenia które zostaną wykonane
+przed przetworzeniem pierwszego rekordu danych, a z pomocą drugiego
+możemy określić co będzie wykonane po wczytaniu ostatniego rekordu
+danych wejściowych; <br>
+<br>
+Jeśli warunek nie zostanie podany - <b>awk</b> wykona polecenia
+na każdym wyrazie, jeśli nie poda się poleceń (łącznie z ' { ' i ' } '
+) - zostanie wykonane domyślne polecenie, czyli wypisanie na
+standardowe wyjście. <br>
+<br>
+Przykłady warunków: <br>
+<br>
+a). <b>/a*bc/ { polecenia }</b> <br>
+ciąg poleceń zostanie wykonany dla wszystkich rekordów w których występuje dowolnie długi ciąg liter 'a' a tuż po nim 'bc'; <br>
+<br>
+b). <b>NF &gt; 1 { polecenia }</b> <br>
+ciąg poleceń zostanie wykonany dla wszystkich rekordów które mają więcej niż jedno pole; <br>
+<br>
+c). <b>$(NF-1) ~ /^[0-9].*/ { polecenia }</b> <br>
+polecenia zostaną wykonane dla wszystkich linii, w których pierwszym znakiem przedostatniego pola jest cyfra; <br>
+<br>
+d). <b>lenght($0) &lt; 20 { polecenia }</b> <br>
+spowoduje wykonanie ciągu poleceń dla wszystkich wierszy zawierających poniżej 20 znaków. <br>
+<br>
+Można także użyć dwóch warunków oddzielonych przecinkiem, co będzie
+oznaczało wykonanie instrukcji dla wszystkich rekordów począwszy od
+zawierającego pierwszy warunek, skończywszy na rekordzie zawierającym
+warunek drugi, np.: <br>
+<br>
+e). <b>/^abc /,/^$/  { polecenia }</b> <br>
+spowoduje wykonanie ciągu poleceń od linii zaczynającej się napisem 'abc', aż do napotkania pierwszej pustej linii. <br>
+<br>
+Warunki złożone są to warunki które powstają poprzez połączenie kilku
+warunków prostych operatorami logicznymi: || (alternatywa), &amp;&amp;
+(koniunkcja), ! (negacja), np.: <br>
+<br>
+f). <b>/[0-9].*/ &amp;&amp; NF==13 { polecenia }</b> <br>
+spowoduje wykonanie ciągu poleceń na wszystkich liniach w których pierwszym znakiem jest cyfra i składających się z 13 wyrazów. <br>
+<br>
+Przykłady prostych POLECEŃ: <br>
+<br>
+a). <b>{ print $3, $1, $2 }</b> <br>
+wypisze kolejno pole trzecie, pole drugie i pole pierwsze każdego rekordu; <br>
+<br>
+b). <b>{ <br>
+    for (i=NF; i&gt;=1; i--) <br>
+    print $i <br>
+}</b> <br>
+odwróci kolejność pól w każdym rekordzie. <br>
+<br>
+Program <b>awka</b> można uczynić skryptem wykonywalnym z poziomu shella nadając mu atrybut x i wpisując do pierwszej linijki: <br>
+<br>
+<b>#!/usr/bin/awk -f</b></p>
+<br>
+<p align="justify">4. Składnia języka <b>awk</b>: <br>
+<br>
+Składnia języka <b>awk</b> oparta jest na składni języka C.<br>
+<br>
+STAŁE:<br>
+Istnieją dwa rodzaje stałych - liczbowe i łańcuchowe. Stałe liczbowe są
+zapisywane jak w C (np.: 1 , 2.77 , 5e-4) i pamiętane jako liczby
+zmiennoprzecinkowe. Stałe łańcuchowe ujmuje się w podwójny cudzysłów. <br>
+<br>
+ZMIENNE: <br>
+W <b>awku</b> nie trzeba deklarować zmiennych -
+wszystkie zmienne są inicjalizowane w momencie użycia i otrzymują
+wartość 0 lub "" (napis pusty) lub FAŁSZ w zależności od kontekstu.
+Wszystkie napisy i liczby poza 0 mają wartość logiczną PRAWDA.<br>
+<br>
+ZMIENNE TABLICOWE:<br>
+Jedynym typem tablicowym w <b>awku</b> są tablice rozproszone, jednowymiarowe, adresowane za pomocą napisów lub liczb. Tablice tworzy się za pomocą funkcji <b>split()</b> lub w momencie odwołania do nich. W celu skasowania tablicy używamy funkcji: <b>delete()</b>. Elementami tablic mogą być liczby lub napisy. Przykład użycia zmiennych i tablic: <br>
+<br>
+<b>i=1</b><br>
+<b>a=i+5</b><br>
+<b>tab["first"]=i</b><br>
+<b>delete tab</b><br>
+<b>tab[2]=a</b><br> 
+<br>
+ZMIENNE WBUDOWANE, których wartości są automatycznie inicjalizowane:<br>
+- <b>FILENAME</b> - nazwa bieżącego pliku; <br>
+
+- <b>FS</b> - wyrażenie regularne opisujące separator pól w linii;<br>
+
+- <b>ARGC</b> - liczba argumentów wywołania programu <b>awk</b>;<br>
+
+- <b>ARGV</b> - tablica argumentów wywołania skryptu;<br>
+
+- <b>NR</b> - numer rekordu aktualnie przetwarzanego;<br>
+
+- <b>FNR</b> - numer rekordu w aktualnie przetwarzanym pliku;<br>
+
+- <b>NF</b> - liczba pól w bieżącym rekordzie; <br>
+
+- <b>RS</b> - znak nowego wiersza;<br>
+
+- <b>$0</b> - cały rekord danych wejściowych;<br>
+
+- <b>$n</b> - n-te pole bieżącego rekordu, pola są oddzielane <b>FS</b>;<br>
+<br>
+<br>
+Jeszcze raz zebrane OPERATORY i ZNAKI SPECJALNE w <b>awku</b>:<br>
+- ' { ' , ' } ' - grupowanie wyrażeń; <br>
+
+- ' $ ' - znak pola; <br>
+
+- ' = = ' - operator równości (stosowany dla liczb i napisów); <br>
+
+- ' &lt; ' , ' &gt; ' , ' &lt;= ' , ' =&gt; ' , ' != ' - operatory nierówności; <br>
+
+- ' ~ ' (tylda) - operator zawierania dla napisów, np.: <b>"abc" ~ /a/</b> jest prawdziwe bo w napisie 'abc' występuje litera 'a', z kolei <b>"abc" ~ /x/</b> jest fałszywe bo w wyrazie 'abc' nie występuje litera 'x'; <br>
+
+- ' !~ ' - operator 'nie zawierania'; <br>
+
+- ' in ' - operator służący do odwoływania się do elementów tablicy, sprawdza czy element występuje w tablicy: 
+<b>if ("abc" in tab) { ..... }</b> , <b>for (i in tab) { ..... }</b> <br>
+- ' || ' , ' &amp;&amp; ' , ' ! ' - operatory logiczne alternatywy, koniunkcji i negacji; <br>
+- ' + ' , ' - ' , ' ++ ' , ' -- ' , ' * ' , ' ** ' , ' / ' , ' ^ ' , '
+% ' - operatory matematyczne, operator ' ** ' służy do potęgowania
+(można korzystać ze wzorów skróconych np. x+=10, y*=8); <br>
+
+- ' ( ' , ' ) ' - służą do grupowania operatorów logicznych oraz znajdują się w pobliżu warunków 'for' oraz 'while'; <br>
+- operator konkatenacji czyli łączenia napisów, nie posiada on żadnego
+symbolu a działa w następujący sposób: a="abc: "$1 - zmiennej 'a'
+nadaliśmy wartość będącą połączeniem napisu 'abc: ' z wartością pola
+pierwszego. <br>
+<br>
+INSTRUKCJE STERUJĄCE: <br>
+Są one analogiczne do instrukcji sterujących z C - istnieje instrukcja warunkowa <b>if</b> - <b>else</b>, instrukcje pętli: <b>do</b> - <b>while</b>, <b>for</b>, <b>while</b>, instrukcja przerywające pętlę: <b>break</b> oraz <b>continue</b>
+wymuszająca zakończenie tego przebiegu pętli i rozpoczęcie następnego.
+Jeśli w pętli lub warunku występuje tylko jedna instrukcja nie trzeba
+jej obejmować nawiasami klamrowymi. Instrukcje w <b>awku</b> nie muszą kończyć się średnikiem. Jest on wymagany tylko gdy kilka instrukcji chcemy wpisać w jednej linii. <br>
+<br>
+<b>if (warunek) { ..... }</b><br>
+<b>if (warunek) { ..... } else { ..... }</b><br>
+<b>do { ..... } while (<warunek>)</warunek></b><br>
+<b>for (inicjalizacja, warunek_podtrzymujący, krok) { ..... }</b><br>
+<b>while (warunek) { ..... }</b><br>
+<br>
+FUNKCJE: <br>
+<b>Awk</b> umożliwia pisanie i wykorzystywanie własnych funkcji oraz korzystanie z funkcji wbudowanych. Definicja: <br>
+<br>
+<b>function nazwa_funkcji (arg1, arg2, ..... , argN) { polecenia }</b><br>
+<br>
+Argumenty są przekazywane przez wartość (oprócz tablic przekazywanych
+przez referencję) i są zmiennymi lokalnymi. Jest to jedyna możliwość
+utworzenia w <b>awk</b>
+zmiennych lokalnych. Wszystkie funkcje muszą coś zwracać. Jeśli w
+funkcji zostanie napotkane return wyrażenie to funkcja się zakończy, a
+jej wartością w miejscu wywołania stanie się wyrażenie. Przykład
+funkcji zwracającej większy spośród elementów:<br>
+<br>
+<b>function max(x, y) { return x &gt; y ? x: y }</b><br>
+<br>
+FUNKCJE WBUDOWANE:<br>
+- <b>gensub(r, s, a, t)</b> - zwraca
+zamieniony napis (nie modyfikując oryginalnego napisu t); zamienia
+napisy pasujące do wyrażenia regularnego r na napis s w oparciu o a w
+napisie t, np.: <br>
+<b>BEGIN { t = "Abcbcbc" ; print gensub(/bc/, "BC", 2, t) }</b> <br>
+   wyświetli "AbcBCbc" bo zamieni drugie wystąpienie 'bc' w ' "Abcbcbc" ' na 'BC';<br>
+<br>
+- <b>length(s)</b> - obliczająca długość łańcucha;<br>
+<br>
+- <b>index(s, t)</b> i <b>match(s, t)</b> - wyszukujące podłańcuch w innym łańcuchu (zwracają numer pierwszego znaku napisu t w s lub 0 jeśli s nie zawiera podnapisu t);<br>
+<br>
+- <b>tolower(s)</b> i <b>toupper(s)</b> - konwertujące do małych lub wielkich liter (nie zamieni polskich liter, takich jak ą, ę, ó);<br>
+<br>
+- <b>systime()</b> - zwraca bieżący czas w sekundach jakie upłynęły od początku epoki (w standardzie POSIX - liczba sekund od 1 stycznia 1970r);<br>
+<br>
+- <b>strftime(format, czas)</b> - zwraca napis zawierający <b>czas</b> zgodnie z formatem <b>format</b>; następujące specyfikacje określą nam: <b>%d</b> - dzień miesiąca, <b>%m</b> - miesiąc, <b>%Y</b> - rok w zapisie czterocyfrowym, <b>%j</b> - dzień roku, <b>%H</b> - godzinę (00-23), <b>%I</b> - godzinę (00-12), <b>%M</b> - minutę, <b>%S</b> - sekundę; <br>
+<br>
+- matematyczne: <b>cos(x)</b> , <b>sin(x)</b> - argumenty w radianach, <b>exp(x)</b> , <b>log(x)</b> , <b>sqrt(x)</b> , <b>int(x)</b> - część całkowita z x, <b>rand(x)</b> - liczba losowa z przedziału [0;1);<br>
+<br>
+OPERACJE WEJŚCIA - WYJŚCIA:<br>
+Instrukcją WEJŚCIA jest <b>getline <zmienna></zmienna></b> która wczytuje rekord i jego zawartość do zmiennej <zmienna>. Można też wczytać linię z innego pliku niż obecnie przetwarzany komendą: <br>
+<b>getline &lt; nazwa_pliku</b><br>
+<b>Awk</b> pamięta którą linię czytał więc wywołanie tej komendy spowoduje odczytanie kolejnej a nie pierwszej linii.<br>
+Instrukcjami WYJŚCIA są <b>print</b> wypisujące na ekran, oraz <b>printf</b>  formatujące napis i wypisujące go na ekran. Przy wypisywaniu można używać przekierowań, np.:<br>
+<b>print "abc" &gt; nazwa_pliku</b> <br>
+wpisze tekst 'abc' do pliku nazwa_pliku (niszcząc jego wcześniejszą zawartość). <br>
+<b>print "abc" &gt;&gt; nazwa_pliku</b> <br>
+dopisze tekst 'abc' na koniec pliku (jeśli wcześniej istniał).
+
+</zmienna></p>
+
+</body></html>

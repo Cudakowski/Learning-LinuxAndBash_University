@@ -1,0 +1,923 @@
+    1  passwd
+    2  ollo6k6k
+    3  passwd
+    4  exit
+    5  ssh
+    6  history
+    7  nano b
+    8  cat b
+    9  nano b
+   10  cat b
+   11  cd .ssh/
+   12  less .
+   13  cd
+   14  mkdir Linux-Osowski
+   15  mkdir Linux-Osowski/lab3
+   16  cd Linux-Osowski/lab3
+   17  mkdir K1 K1/K2
+   18  ls
+   19  rmdir K1
+   20  tree
+   21  touch -c K1/a
+   22  tree
+   23  touch K1/a
+   24  tree
+   25  touch K1/K2/b
+   26  tree
+   27  touch -t 09130900 K1/a
+   28  stat K1/a
+   29  cp --help
+   30  cp K1/* K3
+   31  mkdir K3
+   32  cp K1/* K3
+   33  cp -r K1/* K3
+   34  tree
+   35  ls -l K3/
+   36  tree
+   37  tree > tree1
+   38  tree
+   39  rm --ignore-fail-on-non-empty K1
+   40  rm --help
+   41  rm -r K1
+   42  tree
+   43  cp -r ~ewao/Linux-lab3/ K3
+   44  tree
+   45  ls -Rl K3/
+   46  tree
+   47  mv -b Linux-lab3 Linux
+   48  mv -b Linux-lab3/ Linux/
+   49  mv K3/Linux-lab3 K3/Linux
+   50  tree
+   51  cp -r K3/Linux/Fonts K3
+   52  tree
+   53  mv K3/K2/b K3/K2/c
+   54  tree
+   55  mv K3 K1
+   56  tree
+   57  mv K1/Linux Linux
+   58  tree
+   59  mv Linux/a.sh a.sh
+   60  mv Linux/a.sh ./a.sh
+   61  history -w lab3.txt
+   62  tree
+   63  cat plik
+   64  tree
+   65  help
+   66  exit
+   67  mkdir Linux-Osowski
+   68  cd Linux-Osowski/
+   69  mkdir lab3
+   70  cd lab3
+   71  mkdir -pv K1/K2
+   72  tree
+   73  touch K1/a
+   74  tree
+   75  cp K1/a K2/b
+   76  cp K1/a K1/K2/b
+   77  tree
+   78  touch -t 202409130920 K1/a
+   79  stat K1/a
+   80  mkdir K3
+   81  cp K1/* K3/
+   82  cp -r  K1/* K3/
+   83  tree
+   84  ls -l K3
+   85  ls -lR K3
+   86  tree
+   87  tree > tree1
+   88  tree
+   89  rm -r K1/
+   90  tree
+   91  cp -rs ~ewao/Linux-lab3 K3/
+   92  tree
+   93  rm -r K3/Linux-lab3/
+   94  tree
+   95  cp -r ~ewao/Linux-lab3 K3/
+   96  tree
+   97  mv K3/Linux-lab3 K3/Linux
+   98  tree
+   99  cp -rs K3/Linux/Fonts/* K3/
+  100  tree
+  101  cp -s K3/Linux/Fonts/* K3/
+  102  tree
+  103  cp -l K3/Linux/Fonts/* K3/
+  104  tree
+  105  rm K3/45-latin.conf 
+  106  rm K3/69-unifont.conf 
+  107  tree
+  108  cp K3/Linux/Fonts/* K3/
+  109  tree
+  110  cd K3/
+  111  rm 45-latin.conf 
+  112  rm 51-local.conf 
+  113  rm 60-latin.conf 
+  114  rm 69-unifont.conf 
+  115  cd ..
+  116  tree
+  117  cp -d K3/Linux/Fonts/* K3/
+  118  tree
+  119  ls -l K3/
+  120  mv K3/K2/b K3/K2/c
+  121  tree
+  122  mv K3 K1
+  123  tree
+  124  mv -r K1/Linux/ ./
+  125  mv  K1/Linux ./
+  126  tree
+  127  mv Linux/A/a.sh ./
+  128  mv Linux/A/a]b.sh ./
+  129  mv Linux/A/b.sh ./
+  130  tree
+  131  mv K1/a ./
+  132  tree
+  133  cp -b b.sh a.sh 
+  134  tree
+  135  touch -t b.sh 202409131111
+  136  history
+  137  touch -t 202409131111 b.sh 
+  138  stat b.sh 
+  139  tree .. > 3_Osowski_tree.txt
+  140  tree
+  141  rm 3_Osowski_tree.txt 
+  142  tree
+  143  tree .. > L3_Osowski_tree.txt
+  144  cp L3_Osowski_tree.txt ~ewao/Stud2024
+  145  ls -lh > L3_Osowski_Is.txt
+  146  cp L3_Osowski_Is ~ewao/Stud2024
+  147  cp L3_Osowski_Is.txt ~ewao/Stud2024
+  148  cat L3_Osowski_Is.txt 
+  149  cat L3_Osowski_tree.txt 
+  150  history -w lab3.txt
+  151  scp -r 4Osowski:/home/Linux-Osowski/lab3/
+  152  exit
+  153  tree
+  154  history
+  155  tree
+  156  exit
+  157  cat lab4.txt 
+  158  ls -l
+  159  ls -lR
+  160  rm K1/a
+  161  ls -lR
+  162  chmod -R u+rwx ./
+  163  ls -lR
+  164  mask
+  165  umask
+  166  umask --help
+  167  umask 622
+  168  umask -S
+  169  umask 733
+  170  umask -S
+  171  umask 337
+  172  umask -S
+  173  touch uneditable
+  174  umask 0022
+  175  ls -lR
+  176  ln K2/a a_hrd
+  177  ln K2/a a_hrd2
+  178  ln -s K2/a a_lnk
+  179  ls -l
+  180  cp a_hrd a_cp
+  181  ls -lR
+  182  ls -l K2/a
+  183  ls -l a_cp
+  184  ls -l a_hrd
+  185  ls -l a_hrd2
+  186  ls -l a_lnk
+  187  rm a_cp
+  188  ls -l a_lnk
+  189  ls -l a_hrd2
+  190  ls -l a_hrd
+  191  ls -l K2/a
+  192  cp a_hrd a_cp
+  193  ls -l K2/a
+  194  ls -l a_hrd
+  195  ls -l a_hrd2
+  196  ls -l a_lnk
+  197  ls -l a_cp
+  198  no_ja_nie_widze_zeby_ulegla_zmianie
+  199  cat >> K2/a
+  200  cat >> a_hrd
+  201  ls -lR
+  202  ./a_hrd2
+  203  ./a_lnk
+  204  cp a_lnk a_lnk2
+  205  cp -d a_lnk a_lnk3
+  206  ls -lR
+  207  mv K2/a K2/K22/
+  208  tree
+  209  cat a_lnk
+  210  cat a_hrd
+  211  ls -lR
+  212  ln --help
+  213  ln K2/K22/a a_lnk
+  214  ln -sf K2/K22/a a_lnk
+  215  ln -sf ~/K2/K22/a a_lnk3
+  216  ls -lR
+  217  ln -sf ~K2/K22/a a_lnk3
+  218  ls -lR
+  219  ln -sf ~/K2/K22/a a_lnk3
+  220  ls -lR
+  221  ln -sf ~/Linux-Osowski/lab4/K2/K22/a a_lnk3
+  222  ls -lR
+  223  mv a_* LN/
+  224  ls -l LN
+  225  ln K2 LN/Ka2
+  226  ln -s K2 LN/Ka2
+  227  ls -l LN
+  228  ln -sf K2 ~/LN/Ka2
+  229  ln -sf K2 ~/Linux-OsKa2
+  230  ls -l LN
+  231  ln -sf ~/Linux-Osowski/lab4/K2 LN/Ka2
+  232  ls -l LN
+  233  ln -f ~/Linux-Osowski/lab4/K2 LN/Ka2
+  234  ls -l LN
+  235  ls LN/Ka2
+  236  ls -l LN/Ka2
+  237  cd LN/Ka2
+  238  ls
+  239  tree
+  240  cd ..
+  241  tree
+  242  cd ..
+  243  cp ~ewao/Linux-lab4/kotek.lnk LN/motylek.lnk
+  244  cp -s ~ewao/Linux-lab4/kotek2.lnk LN/motylek2.lnk
+  245  tree
+  246  rm LN/motylek.lnk
+  247  cp -s ~ewao/Linux-lab4/kotek.lnk LN/motylek.lnk
+  248  tree
+  249  cat LN/motylek.lnk
+  250  cat LN/motylek2.lnk
+  251  LN/motylek2.lnk
+  252  LN/motylek.lnk
+  253  no ja nie rozumiem
+  254  nie wyskakuje mi zaden blad
+  255  ls -lR
+  256  ln 
+  257  ln ~ewao/Linux-lab4/Lista-l3 LN/lista_hrd
+  258  ln ~ewao/Linux-lab4/lista-l3 LN/lista_hrd
+  259  ls -lR
+  260  cat >> LN/lista_hrd
+  261  ls -lR
+  262  tyle samo 
+  263  ln /bin/zcat LN/zcat
+  264  ln -s /bin/zcat LN/zcat
+  265  no możliwe jest tylko dowiązanie symboliczne
+  266  ls -lAhR > L3_Osowski.txt
+  267  tac --help
+  268  tree .. > tree.txt
+  269  tree
+  270  cat L3_Osowski.txt tree.txt 
+  271  tree
+  272  cat L3_Osowski.txt 
+  273  cat L3_Osowski.txt >> tree.txt 
+  274  cat L3_Osowski.txt 
+  275  cat tree.txt 
+  276  rm tree.txt 
+  277  tree .. > tree.txt
+  278  cat tree.txt >> L3_Osowski.txt 
+  279  cat L3_Osowski.txt 
+  280  cp L3_Osowski.txt ~ewao/Stud2024/lab4/
+  281  cp L3_Osowski.txt ~ewao/Stud2024/lab4
+  282  cp L3_Osowski.txt ~ewao/Stud2024
+  283  history -2 lab4_2.txt
+  284  history -w lab4_2.txt
+  285  tree
+  286  exit
+  287  mkdir ZIP
+  288  cd ZIP/
+  289  hostname > users
+  290  date --help
+  291  date
+  292  date '%D'
+  293  date '+%D'
+  294  date '+%x'
+  295  date '+%x' >> users 
+  296  id
+  297  id --help
+  298  id -u
+  299  id -u >> users 
+  300  ssh 4osowski@tourus.agh.edu.pl "users" >> users 
+  301  ssh 4osowski@taurus.agh.edu.pl "users" >> users 
+  302  ssh 4osowski@taurus "users" >> users 
+  303  ssh 4osowski@taurus "users"
+  304  cd ..
+  305  rmdir -r ZIP/
+  306  rmdir --h
+  307  rmdir -ignore-fail-on-non-empty ZIP/
+  308  rmdir --ignore-fail-on-non-empty ZIP/
+  309  tree
+  310  rmdir -p ZIP/
+  311  rmdir -p-ignore-fail-on-non-empty ZIP/
+  312  rm ZIP/users
+  313  rmdir ZIP/
+  314  mkdir ZIP
+  315  cd ZIP/
+  316  hostname > users
+  317  date >> users 
+  318  id -u >> users 
+  319  ssh 4osowski@taurus "users" >> users 
+  320  nano
+  321  nano users 
+  322  finger -s Ewa Olejarz
+  323  finger -s Ewa_Olejarz
+  324  finger -s "Ewa Olejarz"
+  325  finger -s ,Ewa Olejarz'
+  326  finger -s 'Ewa Olejarz'
+  327  finger -s ewaoo
+  328  finger -s ewao
+  329  finger -s volejarz
+  330  ssh 4osowski@taurus "finger mindur" > user-info
+  331  cat --help
+  332  cat user-info 
+  333  cat ************* >> user-info 
+  334  cat '*************' >> user-info 
+  335  cat "*************" >> user-info 
+  336  cat  user-info *************
+  337  cat user-info 
+  338  rm user-info 
+  339  ssh 4osowski@taurus "finger mindur" > user-info
+  340  cat user-info 
+  341  cat user-info "*************"
+  342  cat user-info '*************'
+  343  cat user-info << *************
+  344  `
+  345  user
+  346   a
+  347  cat user-info '*************'
+  348  at user-info << *************
+  349  `
+  350  user
+  351   a
+  352  as[=56;87[8i;.;.3;.1q34e,; , cat user-info '*************'
+  353  user
+  354  cat user-info 
+  355  cat > user-info 
+  356  cat user-info 
+  357  ssh 4osowski@taurus "finger mindur" > user-info
+  358  cat >> user-info 
+  359  cat user-info 
+  360  finger -s volejarz >> user-info 
+  361  cat user-info 
+  362  hostname
+  363  ping --help
+  364  ping -c 5 stud206-10.fis.agh.edu.pl 
+  365  ping -c 5 stud206-10.fis.agh.edu.pl > ping
+  366  wget -r http://bobo.fuw.edu.pl/Unix/
+  367  cd ..
+  368  wget wms.mat.agh.edu.pl/~ewao/HP.tar.gz
+  369  wget wms.mat.agh.edu.pl/~ewao/TS.zip
+  370  tar x HP.tar.gz
+  371  gunzip HP.tar.gz
+  372  tree
+  373  tar x HP.tar
+  374  tar fx HP.tar
+  375  tree
+  376  rm HP.tar
+  377  wget wms.mat.agh.edu.pl/~ewao/HP.tar.gz
+  378  tar xzvf HP.tar.gz 
+  379  tree
+  380  unzip TS.zip
+  381  tree
+  382  rm TS.zip
+  383  rm xzvf HP.tar.gz 
+  384  rm HP.tar.gz 
+  385  tree
+  386  zip Ln_Osowski.zip ./*
+  387  tree
+  388  rm Ln_Osowski.zip 
+  389  zip -r Ln_Osowski.zip ./*
+  390  tar czvf Ln_Osowski.tar.gz ./*
+  391  tree
+  392  rm Ln_Osowski.tar.gz 
+  393  tar czvf Ln_Osowski.tar.gz ./ZIP/*
+  394  tar zvfr Ln_Osowski.tar.gz -C ./HP/cw01/*
+  395  tar xvfrz Ln_Osowski.tar.gz -C ./HP/cw01/*
+  396  tar xvfr Ln_Osowski.tar.gz -C ./HP/cw01/
+  397  rm Ln_Osowski.tar.gz 
+  398  tar czvf Ln_Osowski.tar.gz ./ZIP/ ./HP/
+  399  tar tf Ln_Osowski.tar.gz 
+  400  zipinfo Ln_Osowski.zip 
+  401  mc
+  402  mv Ln_Osowski.zip L5_Osowski.zip
+  403  mv Ln_Osowski.tar.gz L5_Osowski.tar.gz 
+  404  cp L5_Osowski.tar.gz  ~ewao/Stud2024/lab5
+  405  cp L5_Osowski.zip  ~ewao/Stud2024/lab5
+  406  history -w lab5.txt
+  407  exit
+  408  jobs
+  409  ps u
+  410  cd Linux-Osowski/lab6
+  411  ps u > procesy1.txt
+  412  ls
+  413  htop
+  414  ps u
+  415  ps u > procesy2.txt
+  416  pkill hop
+  417  pkill nano
+  418  ps u
+  419  pkill nano hop
+  420  kill 2838001
+  421  ps u
+  422  nie mogę zakończyć procesu nano
+  423  kill 2838001
+  424  ps u
+  425  kill 2838186
+  426  kill 2832693
+  427  ps u
+  428  inncyh też nie mogę zkończyć
+  429  ps u > procesy3.txt
+  430  find --help
+  431  find ~ewao/UNIX -mtime -14
+  432  find ~ewao/UNIX -mtime -14 > zad1.txt
+  433  find ~ewao/UNIX -size -100k
+  434  find ~ewao/UNIX -size 100k
+  435  find ~ewao/UNIX -size +100k
+  436  find ~ewao/UNIX -size +100k > zad2.txt
+  437  find ~ewao/UNIX -size -10k -and -size +3k | xargs ls -lh
+  438  find ~ewao/UNIX -size -10k -and -size +3k | xargs ls -lh > zad3.txt
+  439  find /etc -name "config" ! -type d
+  440  find /etc -name "config" ! -type d > zad4.txt 2> arror4.log
+  441  mkdir lab6
+  442  cd lab
+  443  cd lab6
+  444  ps
+  445  ps -ef
+  446  cat > plik
+  447  bg
+  448  ps
+  449  numer to 2832693
+  450  ls -l
+  451  cat plik
+  452  rm plik 
+  453  ps
+  454  fg
+  455  nie ma błędu
+  456  ls -l
+  457  nano& hop
+  458  nano & hop
+  459  nano hop &
+  460  ps
+  461  kill 2835145
+  462  kill 2835194
+  463  kill 2835209
+  464  nano hop &
+  465  ps -f
+  466  kill %1
+  467  ps -f
+  468  kill %2
+  469  kill %3
+  470  ps -f
+  471  ps -aux
+  472  ps -ax
+  473  ps -x
+  474  numer 2832691 status T
+  475  fg
+  476  chmod 777 hop
+  477  ./hop
+  478  ps
+  479  zakończył się
+  480  nano hop &
+  481  jobs
+  482  fg
+  483  ./hop &
+  484  ls --help
+  485  mkdir lab6
+  486  cd lab6
+  487  ps
+  488  ps aux
+  489  cat > plik
+  490  bg
+  491  ps
+  492  numer to 3005400
+  493  ls
+  494  utowrzył się
+  495  cat plik
+  496  rm plik 
+  497  fg
+  498  nie widzę żadnego błędu
+  499  ls
+  500  pliku też nie widzę
+  501  ps
+  502  proces zniknął
+  503  nano hop &
+  504  ps -x
+  505  ma numer 3005897 i status T
+  506  fg
+  507  chmod 777 hop
+  508  ./hop
+  509  ./hop &
+  510  ps -x
+  511  mają numery 3007152 i 3007181, pierwszy ma status T a drugi S
+  512  jobs
+  513  bg
+  514  jobs
+  515  fg
+  516  ps
+  517  zakończył się
+  518  nano hop &
+  519  fg
+  520  ./hop &
+  521  jobs
+  522  bg
+  523  history -w lab61.txt
+  524  jobs
+  525  nie widzę
+  526  cd Linux-Osowski/lab6/
+  527  ps u
+  528  ps u > procesy1.txt
+  529  htop
+  530  ps u
+  531  ps u > procesy2.txt
+  532  kill 3009783
+  533  kill 3007152
+  534  ps u
+  535  kill 3007875
+  536  ps u
+  537  nie udało się zakończyć procesu nano
+  538  bg
+  539  jobs
+  540  kill 3007875
+  541  ps u
+  542  nie mogę zakończyć procesu nano
+  543  ps u > procesy3.txt
+  544  find ~ewao/UNIX -mtime -14
+  545  find ~ewao/UNIX -mtime -14 2> /dev/null
+  546  find ~ewao/UNIX -mtime -14 > zad1.txt 2> /dev/null
+  547  find ~ewao/UNIX -size +100k 2> /dev/null
+  548  find ~ewao/UNIX -size +100k > zad2.txt 2> /dev/null
+  549  find ~ewao/UNIX -size -10k -and -size +3k 2> /dev/null
+  550  find ~ewao/UNIX -size -10k -and -size +3k | xargs ls -h 2> /dev/null
+  551  find ~ewao/UNIX -size -10k -and -size +3k | xargs ls -lh 2> /dev/null
+  552  find ~ewao/UNIX -size -10k -and -size +3k | xargs ls -lh > zad3.txt 2> /dev/null
+  553  find /etc ! -type d -name "config" | xargs ls -lh > zad4.txt 2> error4.log
+  554  find /etc ! -type d -name "config" | xargs ls -lh
+  555  ls
+  556  rm error4.log 
+  557  rm zad4.txt 
+  558  find /etc ! -type d -name "config"
+  559  find /etc ! -type d -name "config" > zad4.txt 2> error4.log
+  560  find ~ewao -user 4osowski 2> /dev/null
+  561  mv /home/staff/ewao/Stud2024/lab5/L5_Osowski.zip /home/staff/ewao/Stud2024/lab5/L3_Osowski.zip
+  562  mv /home/staff/ewao/Stud2024/lab5/L5_Osowski.tar.gz /home/staff/ewao/Stud2024/lab5/L3_Osowski.tar.gz
+  563  find ~ewao -user 4osowski 2> /dev/null
+  564  find ~ewao -user 4osowski > zad5.txt 2> /dev/null
+  565  find ~ewao -user 4osowski | xargs zad6.zipgiga nagrywarka 2> /dev/null
+  566  ls
+  567  find ~ewao -user 4osowski | xargs /lab6/zad6.zipgiga nagrywarka 2> /dev/null
+  568  ls
+  569  find ~ewao -user 4osowski 2> dev/null | xargs /lab6/zad6.zipgiga nagrywarka 
+  570  find ~ewao -user 4osowski 2> dev/null | xargs ./zad6.zipgiga nagrywarka 
+  571  find ~ewao -user 4osowski 2> dev/null | xargs zad6.zipgiga nagrywarka 
+  572  find ~ewao -user 4osowski 2> dev/null | xargs zip zad6.zipgiga nagrywarka 
+  573  ls
+  574  find ~ewao -user 4osowski 2> dev/null | xargs zip zad6.zipgiga 
+  575  find ~ewao -user 4osowski 2> /dev/null | xargs zip zad6.zipgiga 
+  576  ls
+  577  rm zad6.zipgiga 
+  578  find ~ewao -user 4osowski 2> /dev/null | xargs zip zad6.zipgiga nagrywarka 
+  579  ls
+  580  find /bin -perm 777 2> error7.log | xargs ls -lh > zad7.txt
+  581  mkdir ZAD8
+  582  cd ZAD8/
+  583  find ~ewao -user 4osowski -name "*.txt" 2> /dev/null | xargs cp {} ./ 
+  584  ls
+  585  find ~ewao -user 4osowski -name "*.txt" 2> /dev/null | xargs -I{} cp {} ./ 
+  586  ls
+  587  whereis dict
+  588  cd ..
+  589  whereis dict > zad9.txt
+  590  find /etc -type d -name "????" ! -name "[b-wA-Z]*"
+  591  find /etc -type d -name "????" ! -name "[b-wA-Z]*" 2> /DEV/NULL
+  592  find /etc -type d -name "????" ! -name "[b-wA-Z]*" 2> /dev/null
+  593  find /etc -type d -name "????" ! -name "[b-wA-Z]*" > lab6/find-3a.txt 2> /dev/null 
+  594  find /etc -type d -name "????" ! -name "[b-wA-Z]*" > find-3a.txt 2> /dev/null 
+  595  find /etc -type l -name "??[1-9]?" 2> /dev/null 
+  596  find /etc -type l -name "*[1-9]?" 2> /dev/null 
+  597  find /etc -type l -name "*[1-9]?" > find-3b.txt 2> /dev/null 
+  598  find /etc \( -type l -name "[?????]" \) -or \( -type d -name "??" -maxdepth 2 \) 2> /dev/null 
+  599  find /etc -type l -name "[?????]" -or \( -type d -name "??" -maxdepth 2 \) 2> /dev/null 
+  600  find /etc \( -type l -name "?????" \) -or \( -type d -name "??" -maxdepth 2 \) 2> /dev/null 
+  601  find /etc \( -type l -name "?????" \) -or \( -type d -name "??" -maxdepth 2 \) > find-3c.txt 2> /dev/null 
+  602  find /etc -type d -name "??" -maxdepth 2 2> /dev/null 
+  603  find /etc -type d -name "?*" -maxdepth 2 2> /dev/null 
+  604  find /etc -type d -name "*" -maxdepth 2 2> /dev/null 
+  605  find /etc -type d -name "?*" -maxdepth 2 2> /dev/null 
+  606  find /etc -type d -name "??*" -maxdepth 2 2> /dev/null 
+  607  find /etc -type d -name "???*" -maxdepth 2 2> /dev/null 
+  608  find /etc -type f -name "[bc]???????*" 2> /dev/null 
+  609  find /etc -type f -name "[bc]???????*" ! -name "*[.-_]*" 2> /dev/null 
+  610  find /etc -type f -name "[bc]???????*" ! -name "*[._-]*" 2> /dev/null 
+  611  find /etc -type f -name "[bc]???????*" ! -name "*[._-]*" > find-3d.txt 2> /dev/null 
+  612  find /etc -type f -type d -name "[a-z]??[0-9]" ! -mtime -365 2> /dev/null | xargs ls -l
+  613  find /etc -type f -type d -name "[a-z]??[0-9]" ! -mtime -365 2> /dev/null | xargs ls -lh
+  614  find /etc -type f -type d -name "[a-z]??[0-9]" ! -mtime -365 2> /dev/null | xargs ls -l
+  615  find /etc -type f -type d -name "[a-z]??[0-9]" ! -mtime -365 2> /dev/null | xargs ls -l {}
+  616  find /etc -type f -type d -name "[a-z]??[0-9]" ! -mtime -365 2> /dev/null | xargs -I{} ls -l {}
+  617  find /etc -type f -type d -name "[a-z]??[0-9]" -mtime +365 2> /dev/null | xargs -I{} ls -l {}
+  618  find /etc -type f -type d -name "[a-z]??[0-9]" -mtime +365 | xargs ls -l
+  619  find /etc -type f -type d -name "[a-z]??[0-9]" -mtime +365 
+  620  find /etc -type fd -name "[a-z]??[0-9]" -mtime +365 
+  621  find /etc -type f -type d -name "[a-z]??[0-9]" -mtime +365 
+  622  find /etc -type f -type d -name "[a-z]??[1-9]" -mtime +365 
+  623  find /etc -type f -type d -name "[a-z]??[0-9]" -mtime +365 
+  624  find /etc -type f -type d -name "[a-z]*" -name "*[0-9]" -name "????" -mtime +365 
+  625  find /etc -type f -type d -name "[a-z]*" -name "*[0-9]" -mtime +365 
+  626  find /etc -type d -maxdepth 1
+  627  find /etc -name "app*" -maxdepth 1
+  628  find /etc/apparmor.d -name "????" -maxdepth 1
+  629  find /etc/apparmor.d -name "????" 
+  630  find /etc/apparmor.d -type f -type d -name "[a-z]*" -name "*[0-9]" -mtime +365 
+  631  find /etc/apparmor.d -type f -or -type d -name "[a-z]*" -name "*[0-9]" -mtime +365 
+  632  find /etc/apparmor.d -type f -or -type d -name "[a-z]??[0-9]" -mtime +365 
+  633  find /etc/apparmor.d \( -type f -or -type d \) -name "[a-z]??[0-9]" -mtime +365 
+  634  find /etc \( -type f -or -type d \) -name "[a-z]??[0-9]" -mtime +365 
+  635  find /etc \( -type f -or -type d \) -name "[a-z]??[0-9]" -mtime +365 2> /dev/null
+  636  find /etc \( -type f -or -type d \) -name "[a-z]??[0-9]" -mtime +365 > find-3e.txt 2> /dev/null
+  637  tree > tree.txt
+  638  history --help
+  639  history -w lab6.txt
+  640  tar cvf L3_Osowski.tar ./*
+  641  ls -l
+  642  cp ./L3_Osowski.tar ~ewao/Stud2024/lab6
+  643  cp ./L3_Osowski.tar ~ewao/Stud2024/lab6/
+  644  cp ./L3_Osowski.tar ~ewao/Stud2024/
+  645  cp ./L3_Osowski.tar ~ewao/Stud2024/ 
+  646  exit
+  647  cd Linux-Osowski/
+  648  cd lab7/
+  649  tree
+  650  rm lab666.txt
+  651  pu --help
+  652  du --help
+  653  find /var/log -type f \( -name "*.log" -or -name "*log.old" \) -size +10k
+  654  find /var/log -type f \( -name "*.log" -or -name "*log.old" \) -size +10k 2> /dev/null
+  655  find --help
+  656  find /var/log -type f \( -name "*.log" -or -name "*log.old" \) -size +10k - [B2> /dev/null -exec du -h {}
+  657  find /var/log -type f \( -name "*.log" -or -name "*log.old" \) -size +10k -regex '' 2> /dev/null -exec du
+  658  find /var/log -type f \( -name "*.log" -or -name "*log.old" \) -size +10k -regex '' 2> /dev/null -exec du {}
+  659  find /var/log -type f \( -name "*.log" -or -name "*log.old" \) -size +10k -regex '' 2> /dev/null 
+  660  find /var/log -type f \( -name "*.log" -or -name "*log.old" \) -size +10k 2> /dev/null 
+  661  find /var/log -type f \( -name "*.log" -or -name "*log.old" \) -size +10k 2> /dev/null -exec du -h {}
+  662  find /var/log -type f \( -name "*.log" -or -name "*log.old" \) -size +10k 2> /dev/null
+  663  find /var/log -type f \( -name "*.log" -or -name "*log.old" \) -size +10k 2> /dev/null -exec du -h {}
+  664  find /var/log -type f \( -name "*.log" -or -name "*log.old" \) -size +10k 2> /dev/null -exec du -h {} \;
+  665  find /var/log -type f -size +10k -regex '*.\.(log\|log.old\)' 2> /dev/null -exec du -h {} \;
+  666  find /var/log -type f -size +10k -regex '*.(log\|log.old\)' 2> /dev/null -exec du -h {} \;
+  667  find /var/log -type f -size +10k -regex '*.\(log\|log.old\)' 2> /dev/null -exec du -h {} \;
+  668  find /var/log -type f -size +10k -regex '*.\.\(log\|log.old\)' 2> /dev/null -exec du -h {} \;
+  669  find /var/log -type f -size +10k -regex '*\.\(log\|log.old\)' 2> /dev/null -exec du -h {} \;
+  670  find /var/log -type f -size +10k -regex '.*\.\(log\|log.old\)' 2> /dev/null -exec du -h {} \;
+  671  find /var/log -type f -size +10k -regex '.*\.\(log\|log.old\)' 2> /dev/null -exec du -sh {} \;
+  672  find /var/log -type f -size +10k -regex '.*\.\(log\|log.old\)' 2> /dev/null -exec du -h {} \;
+  673  du --help
+  674  find /var/log -type f -size +10k -regex '.*\.\(log\|log.old\)' 2> /dev/null -exec du -hc {} \;
+  675  find /var/log -type f -size +10k -regex '.*\.\(log\|log.old\)' 2> /dev/null -exec du -ch {} \;
+  676  du --help
+  677  find /var/log -type f -size +10k -regex '.*\.\(log\|log.old\)' 2> /dev/null | xargs du -ch
+  678  find /var/log -type f -size +10k -regex '.*\.\(log\|log.old\)' 2> /dev/null | xargs du -ch > zad9.txt
+  679  grep "3*" plik1.txt 
+  680  grep "3" plik1.txt 
+  681  grep 3 plik1.txt 
+  682  grep 3 plik2.txt 
+  683  grep 3 plik[12].txt 
+  684  grep 3 plik[12].txt > grep-1a.txt
+  685  grep n plik[12].txt 
+  686  grep 3* plik[12].txt 
+  687  grep 3.* plik[12].txt 
+  688  grep .*n plik[12].txt 
+  689  grep n.* plik[12].txt 
+  690  grep \<3 plik[12].txt > grep-1a.txt
+  691  grep \<3 plik[12].txt 
+  692  grep '\<3' plik[12].txt 
+  693  grep '\<3' plik[12].txt > grep-1a.txt
+  694  grep '\>n' plik[12].txt 
+  695  grep 'n\>' plik[12].txt 
+  696  grep 'n\>' plik[12].txt > grep-1b.txt
+  697  grep '\<[0-9]' plik[12].txt 
+  698  grep '\<[0-9][0-9]' plik[12].txt 
+  699  grep '\<[0-9][0-9]' plik[12].txt > grep-1c.txt
+  700  ssh --help
+  701  ssh 4osowski@taurus.fis.agh.edu.pl
+  702  ssh ls 4osowski@taurus.fis.agh.edu.pl
+  703  ssh 4osowski@taurus.fis.agh.edu.pl ls
+  704  grep '\<[0-9]{2}' plik[12].txt > grep-1c.txt
+  705  grep '\<[0-9]{2}' plik[12].txt 
+  706  grep '^[0-9]{2}' plik[12].txt 
+  707  grep "^[0-9]{2}" plik[12].txt 
+  708  grep "[0-9]{2}" plik[12].txt 
+  709  grep '\<[0-9][0-9]' plik[12].txt > grep-1c.txt
+  710  ssh 4osowski@taurus.fis.agh.edu.pl "who"
+  711  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -e"
+  712  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -E "pts/[200-299]" "
+  713  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep "[200-299]" "
+  714  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -E "^[200-299]" "
+  715  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -E "pts/[200-299]" "
+  716  echo "makapaka" | grep 'a\'
+  717  echo "makapaka" | grep 'a'
+  718  echo "maka/paka" | grep 'a'
+  719  echo "maka /paka" | grep 'a'
+  720  echo "maka /paka" | grep '/pa'
+  721  echo "maka /paka" | grep '/a'
+  722  echo "maka /paka" | grep '/'
+  723  echo "maka /paka" | grep '/[ab]'
+  724  echo "maka /paka" | grep '/[apb]'
+  725  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep '/[200-299]' "
+  726  echo "maka /paka" | grep -c '/[apb]'
+  727  echo "maka /paka" | grep '/[apb]'
+  728  echo "maka /paka" | grep -c '/[apb]'
+  729  ls 
+  730  ls -l
+  731  ls -l | grep -c
+  732  ls -l | grep -c 1
+  733  ls -l | grep -c '[1-100]\sNov'
+  734  ls -l | grep '[1-100]\sNov'
+  735  ls -l | grep '[1-9]{2}\sNov'
+  736  ls -l | grep -E '[1-9]{2}\sNov'
+  737  ls -l | grep -E '[1-9]{,2}\sNov'
+  738  ls -l | grep -E '[1-9]{3}\sNov'
+  739  ls -l | grep -E '\s[1-9]{2}\sNov'
+  740  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -E '/2[0-9]{2}' "
+  741  ssh 4osowski@taurus.fis.agh.edu.pl "who "
+  742  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -E '/2[0-9]{1}' "
+  743  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -E '/2[0-9]{2}' > grep-2a.txt"
+  744  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -Ec '/2[0-9]{2}' >> grep-2a.txt"
+  745  nie ma żadnych w zakresie 200-900
+  746  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -Ec '/2[0-9]{2}' "
+  747  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -Ev '\b3*' "
+  748  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -E '\b3*' "
+  749  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep '\b3' "
+  750  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep '\s3' "
+  751  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -v '^3' "
+  752  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep "
+  753  ssh 4osowski@taurus.fis.agh.edu.pl "who "
+  754  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -v '^[34]' "
+  755  tree
+  756  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -E '/2[0-9]{2}' > ~/Linux-Osowski/lab7/grep-2a.txt"
+  757  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -Ec '/2[0-9]{2}' >> ~/Linux-Osowski/lab7/grep-2a.txt"
+  758  tree
+  759  nie ma żadnych w zakresie 200-900
+  760  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -v '^[34]' > ~/Linux-Osowski/lab7/grep-2b.txt"
+  761  ssh 4osowski@taurus.fis.agh.edu.pl "who | grep -vc '^[34]' >> ~/Linux-Osowski/lab7/grep-2b.txt"
+  762  tree
+  763  ssh 4osowski@taurus.fis.agh.edu.pl "
+  764  history
+  765  cd Linux-Osowski/
+  766  cd lab7
+  767  ssh 4osowski@taurus.fis.agh.edu.pl "ps"
+  768  ssh 4osowski@taurus.fis.agh.edu.pl "w"
+  769  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep -v '-bash' "
+  770  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep "-bash" "
+  771  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep -v 'bash' "
+  772  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep 'bash' "
+  773  ssh 4osowski@taurus.fis.agh.edu.pl "w"
+  774  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep 'bash\s' "
+  775  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep -v '\Dbash' "
+  776  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep -v 'bash' "
+  777  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep -v '\dbash' "
+  778  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep -v '\-bash' "
+  779  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep '-bash' "
+  780  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep '\-bash' "
+  781  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep '\s\-bash' "
+  782  ssh 4osowski@taurus.fis.agh.edu.pl -v "w | grep '\s\-bash' "
+  783  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep -v '\s\-bash' "
+  784  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep -v '\s\-bash' > ~/Linux-Osowski/lab7/grep-2c.txt"
+  785  ssh 4osowski@taurus.fis.agh.edu.pl "w | grep -vc '\s\-bash' >> ~/Linux-Osowski/lab7/grep-2c.txt"
+  786  tree
+  787  cat grep-2c.txt 
+  788  grep '.\(c\|html\)' ~ewao/UNIX*
+  789  grep '.\(c\|html\)' ~ewao/UNIX/*
+  790  find ~ewao/UNIX -type f \( -name "*.c" -or -name "*.tmp" \)
+  791  find ~ewao/UNIX -type f \( -name "*.c" -or -name "*.html" \)
+  792  find ~ewao/UNIX -type f \( -name "*.c" -or -name "*.html" \) 2> /cev/null
+  793  find ~ewao/UNIX -type f \( -name "*.c" -or -name "*.html" \) 2> /dev/null
+  794  find ~ewao/UNIX -type f -regex '.\(c\|html\)' 2> /dev/null
+  795  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' 2> /dev/null
+  796  history > lab777.txt
+  797  tree
+  798  cat lab777.txt 
+  799  exit
+  800  cd Linux-Osowski/
+  801  cd lab7
+  802  tree
+  803  rm lab777.txt 
+  804  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' 2> /dev/null 
+  805  find ~ewao/UNIX -type f -regex '.\.\(c\|html\)' 2> /dev/null 
+  806  find ~ewao/UNIX -type f -regex '.\(c\|html\)' 2> /dev/null 
+  807  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' 2> /dev/null 
+  808  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' -exec grep '' 2> /dev/null 
+  809  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' -exec grep '/n' 2> /dev/null 
+  810  grep --help
+  811  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' -exec grep -l '^/s$' 2> /dev/null 
+  812  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' -exec grep '^/s$' 2> /dev/null
+  813  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' -exec grep '^/s$' 
+  814  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' -exec grep '^/s$' {} /;
+  815  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' -exec grep '^\s$' {} \;
+  816  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' -exec grep '^$' {} \;
+  817  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' -exec grep -l '^$' {} \;
+  818  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' -exec grep -l '^$' {} \; 2> /dev/null
+  819  find ~ewao/UNIX -type f -regex '.*\.\(c\|html\)' -exec grep -l '^$' {} \; > grep-3.txt 2> /dev/null
+  820  ls /etc/* 
+  821  ls -l /etc/* 
+  822  ls
+  823  ls -l --help
+  824  ls -l /etc/* | sort -nk5
+  825  ls -l /etc/* | sort -rnk5
+  826  ls -l /etc/* | sort -rnk5 | uniq
+  827  ls -l /etc/* | sort -rnk5 
+  828  sort --help
+  829  ls -lt /etc/* | sort -rnk5 
+  830  ls -lt /etc/* | sort -rnk5 | uniq
+  831  ls -l -t=2014 /etc/* | sort -rnk5 | uniq
+  832  ls --help
+  833  ls -l /etc/* | grep '\(2014\|2018\)'
+  834  ls -lt /etc/* | grep '\(2014\|2018\)'
+  835  ls -lS /etc/* | grep '\(2014\|2018\)'
+  836  ls -S /etc/* | grep '\(2014\|2018\)'
+  837  ls -S /etc/*
+  838  ls -lS /etc/* | grep '\(2014\|2018\)'
+  839  ls -Sl /etc/* | grep '\(2014\|2018\)'
+  840  ls
+  841  ls -l
+  842  /ls -lS
+  843  ls -lS
+  844  ls -lS | grep '18'
+  845  ls -lS /etc/* | grep '\(2014\|2018\)'
+  846  ls -lS /etc/*
+  847  ls -lS /etc
+  848  ls -lS /etc | grep '\(2014\|2018\)'
+  849  ls -lS /etc | grep '\(2014\|2018\)' > grep-4.txt
+  850  ls -l /etc | grep '\(2014\|2018\)' | sort -rnk5
+  851  ls -l /etc | grep '\(2014\|2018\)' | sort -rnk5 > grep-4b.txt
+  852  grep -E '\w[uyz]\w{3}x' ~ewao/Linux-lab6/dict
+  853  grep -E '\w[uyz]\w{3}x' ~ewao/Linux-lab7/dict
+  854  grep -E '\b\w[uyz]\w{3}x' ~ewao/Linux-lab7/dict
+  855  grep -E '\b\w[uyz]\w{3}x\b' ~ewao/Linux-lab7/dict
+  856  grep '\b\w[uyz]\w{3}x\b' ~ewao/Linux-lab7/dict
+  857  grep -E '\b\w[uyz]\w{3}x\b' ~ewao/Linux-lab7/dict
+  858  grep -E '\b\w[uyz]\w{3}x\b' ~ewao/Linux-lab7/dict > grep-5a.txt
+  859  grep -E '\bh[^aeojp]{2}\b' ~ewao/Linux-lab7/dict
+  860  grep -E '\bh[aeojp]{2}\b' ~ewao/Linux-lab7/dict
+  861  grep -E '\bh[^aeojp]{2}\b' ~ewao/Linux-lab7/dict
+  862  grep -E '\bh[^aeojp]{2}\b' ~ewao/Linux-lab7/dict > grep-5b.txt
+  863  wc -c ~ewao/Linux-lab7/dict 
+  864  liczba=wc -c ~ewao/Linux-lab7/dict && wc -c ~ewao/Linux-lab7/dict
+  865  liczba= wc -c ~ewao/Linux-lab7/dict && 
+  866  cd Linux-Osowski/lab7/
+  867  liczba= wc -c ~ewao/Linux-lab7/dict && echo "Liczba słów: $liczba!"
+  868  liczba= wc -c ~ewao/Linux-lab7/dict && echo "Liczba słów: $liczba"
+  869  echo "Liczba słów: <liczba>" | wc -c ~ewao/Linux-lab7/dict 
+  870  echo "Liczba słów: " && wc -c ~ewao/Linux-lab7/dict 
+  871  echo -n "Liczba słów: " && wc -c ~ewao/Linux-lab7/dict 
+  872  echo -n "Liczba słów: " && wc -c ~ewao/Linux-lab7/dict >> grep-5b.txt
+  873  cat grep-5b
+  874  tree
+  875  cat grep-5b.txt
+  876  \( echo -n "Liczba słów: " && wc -c ~ewao/Linux-lab7/dict \) >> grep-5b.txt
+  877  echo -n "Liczba słów: " && wc -c ~ewao/Linux-lab7/dict >> grep-5b.txt
+  878  echo --help
+  879  echo -help
+  880  echo --help d
+  881  echo -n "Liczba słów: " >>gerp-5b.txt && wc -c ~ewao/Linux-lab7/dict >> grep-5b.txt 
+  882  cat gerp-5b.txt 
+  883  cat grep-5b.txt 
+  884  echo -n "Liczba słów: " >>gerp-5b.txt && wc -c ~ewao/Linux-lab7/dict >> grep-5b.txt 
+  885  echo -n "Liczba słów: " >>grep-5b.txt && wc -c ~ewao/Linux-lab7/dict >> grep-5b.txt 
+  886  cat grep-5b.txt 
+  887  rm gerp-5b.txt 
+  888  rm grep-5b.txt 
+  889  grep -E '\bh[^aeojp]{2}\b' ~ewao/Linux-lab7/dict > grep-5b.txt
+  890  echo -n "Liczba słów: " >>grep-5b.txt && wc -c ~ewao/Linux-lab7/dict >> grep-5b.txt 
+  891  cat grep-5b.txt 
+  892  grep '[0-9]{2}\-[0-9]{3}' ~ewao/Linux-lab7/kody
+  893  grep '[0-9]{2}[0-9]{3}' ~ewao/Linux-lab7/kody
+  894  grep -E '[0-9]{2}[0-9]{3}' ~ewao/Linux-lab7/kody
+  895  grep -vE '[0-9]{2}[0-9]{3}' ~ewao/Linux-lab7/kody
+  896  grep -E '[0-9]{2}' ~ewao/Linux-lab7/kody
+  897  grep -E '[0-9]{2}\w' ~ewao/Linux-lab7/kody
+  898  grep -E '[0-9]{2}\w[0-9]{3}' ~ewao/Linux-lab7/kody
+  899  grep -E '[0-9]{2}\b[0-9]{3}' ~ewao/Linux-lab7/kody
+  900  grep -E '[0-9]{2}\s[0-9]{3}' ~ewao/Linux-lab7/kody
+  901  grep -E '[0-9]{2}\D[0-9]{3}' ~ewao/Linux-lab7/kody
+  902  grep -E '[0-9]{2}\d[0-9]{3}' ~ewao/Linux-lab7/kody
+  903  grep -E '[0-9]{2}\t[0-9]{3}' ~ewao/Linux-lab7/kody
+  904  grep -E '[0-9]{2}\w[0-9]{3}' ~ewao/Linux-lab7/kody
+  905  grep -E '[0-9]{2}\W[0-9]{3}' ~ewao/Linux-lab7/kody
+  906  grep -E '[0-9]{2}\S[0-9]{3}' ~ewao/Linux-lab7/kody
+  907  grep -E '[0-9]{2}\s[0-9]{3}' ~ewao/Linux-lab7/kody
+  908  grep -E '\b[0-9]{2}' ~ewao/Linux-lab7/kody
+  909  grep -E '\b[0-9]{2}\D' ~ewao/Linux-lab7/kody
+  910  grep -E '\b[0-9]{2}\d' ~ewao/Linux-lab7/kody
+  911  grep -E '\b[0-9]{5}\b' ~ewao/Linux-lab7/kody
+  912  grep -E '\b[0-9]{6}\b' ~ewao/Linux-lab7/kody
+  913  grep -E '\b[0-9]{7}\b' ~ewao/Linux-lab7/kody
+  914  grep -E '\b[0-9]{9}\b' ~ewao/Linux-lab7/kody
+  915  grep -E '\b[0-9]{2}' ~ewao/Linux-lab7/kody
+  916  grep -E '\b[0-9]{2}.' ~ewao/Linux-lab7/kody
+  917  grep -E '\b[0-9]{2}.[0-9]{3}' ~ewao/Linux-lab7/kody
+  918  grep -E '\b[0-9]{2}.[0-9]{3}' ~ewao/Linux-lab7/kody > grep-6.txt
+  919  tree
+  920  zip L3_Osowski.zip ./*
+  921  tree
+  922  cp L3_Osowski.zip ~ewao/Stud2024/lab7
+  923  history > lab7.txt

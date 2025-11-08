@@ -1,0 +1,5 @@
+/home/staff/ewao/Stud2024/lab5/L3_Osowski.zip
+/home/staff/ewao/Stud2024/lab5/L3_Osowski.tar.gz
+/home/staff/ewao/Stud2024/lab3/L3/L3_Osowski_tree.txt
+/home/staff/ewao/Stud2024/lab3/L3/L3_Osowski.txt
+/home/staff/ewao/Stud2024/lab3/L3/L3_Osowski_Is.txt

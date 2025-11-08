@@ -1,0 +1,53 @@
+Script started on 2024-12-16 00:57:37+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="94" LINES="30"]
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ exit[Ks1.sh co
+[?2004lbash: s1.sh: command not found
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ s1.sh co[1@.[1@/
+[?2004lSlowo co wystapilo 64 razy.
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ ./s1.sh co[K[K[K[1P.sh2.sh[C[C[C ekhem/licz/lili.txt 
+[?2004l2
+4
+6
+6
+8
+6
+4
+4
+7
+1) Największa i najmniejsza
+2) Średnia
+3) Zwiększenie o numer indeksu każdego elementu tablicy
+4) Ile większych od podanej
+5) Posortowanie rosnąco
+6) Quit
+#? 1
+Największa: 8 Najmniejsza: 2
+#? 2
+5.22
+#? 3
+3
+5
+7
+7
+9
+7
+5
+5
+8
+#? 4
+Podaj liczbę: 5
+5
+#? 5
+3 5 5 5 7 7 7 8 9 #? ^C
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ s2.s[C[1P.s3.s[C[Ch.s3.sh/s3.sh[C[C[C[C[C -r mapakakpakaapaka[C makapakaa makapaka
+[?2004lPodaj znak: o
+mokopoko
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ ./s3.sh -r a makapaka[1P makapaka[1Pmakapaka[1P makapakau makapaka
+[?2004lMAKAPAKA
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ ./s3.sh -u makapaka[1P makapakad makapaka[C makapakap makapakaa makapaka
+[?2004lmkk
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ ./s3.sh -d pa makapaka[1P[1@l[C[C[C[1P makapaka[1P makapaka[1Pmakapaka
+[?2004l8
+[?2004h]0;4osowski@taurus: ~/Linux-Osowski/lab10[01;32m4osowski@taurus[00m:[01;34m~/Linux-Osowski/lab10[00m$ ./s3.sh -l makapaka[Kexit
+[?2004lexit
+
+Script done on 2024-12-16 01:00:40+01:00 [COMMAND_EXIT_CODE="0"]

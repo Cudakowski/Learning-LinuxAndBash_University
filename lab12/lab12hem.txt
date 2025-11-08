@@ -1,0 +1,810 @@
+    1  ./s4.sh -b ekhem/ene.*
+    2  tree
+    3  exit
+    4  ./s4.sh -a co ekhem/ene
+    5  script
+    6  rm typescript 
+    7  rm s2copy.sh 
+    8  nano s4.sh 
+    9  script
+   10  nano s3.sh 
+   11  script >> typescript 
+   12  script typescript2 
+   13  tree
+   14  mv typescript typescript.txt
+   15  mv typescript2 typescript2.txt
+   16  cp s1.sh s1.txt 
+   17  cp s2.sh s2.txt 
+   18  cp s3.sh s3.txt 
+   19  cp s4.sh s4.txt 
+   20  exit
+   21  cd Linux-Osowski/lab10
+   22  nano s2.sh 
+   23  tree
+   24  ./s4.sh -a kek ./ekhem/emene
+   25  ./s4.sh -a kek ./ekhem/emene\
+   26  ./s4.sh -a kek ./ekhem/emene
+   27  tree
+   28  basename ekhem/emene.kek 
+   29  basename ekhem/emene.kek kek
+   30  basename ekhem/emene.kek .kek
+   31  echo "mene.txt"
+   32  echo "mene.txt" | tr -d ".*$"
+   33  echo "mene.txt" | tr -d ".$"
+   34  echo "mene.txt" | tr -d "."
+   35  echo "mene.txt" | tr -d ".+$"
+   36  echo "mene.txt" | tr -d ".+[a-z]*$"
+   37  echo "mene.txt" | wc -c
+   38  ./s4.sh -a ./ekhem/emene.kek
+   39  tree
+   40  ./s4.sh -a kek ./ekhem/emene
+   41  tree
+   42  ./s4.sh -e kekw ./ekhem/emene.kek
+   43  tree
+   44  echo "maka-paka" | grep "-"
+   45  echo "maka-paka" | grep "\-"
+   46  cd ekhem/
+   47  touch ene-mene.txt
+   48  cd ..
+   49  ./s4.sh -c ./ekhem/ene-mene.txt 
+   50  tree
+   51  ./s4.sh -c ./ekhem/ene-mene.txt 
+   52  tree
+   53  ./s4.sh -c ./ekhem/ene-mene.txt 
+   54  echo "maka-paka" | grep "-$"
+   55  echo "maka-paka" | grep "\-$"
+   56  echo "maka-" | grep "\-$"
+   57  ./s4.sh -c ./ekhem/ene-mene.txt 
+   58  tree
+   59  mv ekhem/ene-mene.tx. ekhem/ene-mene.txt
+   60  ./s4.sh -c ./ekhem/ene-mene.txt 
+   61  tree
+   62  mv ekhem/ene-mene.tx.txt ekhem/ene-mene.txt
+   63  tree
+   64  cp ekhem/ene-mene.txt ekhem/ene-mene
+   65  ./s4.sh -c ./ekhem/ene-mene
+   66  dirname /eo/eo
+   67  ./s4.sh -c ./ekhem/ene-mene
+   68  tree
+   69  ./s4.sh -c ./ekhem/ene-mene
+   70  tree
+   71  ./s4.sh -c ./ekhem/ene-mene.txt
+   72  tree
+   73  mv ekhem/ene-mene.tx.txt ekhem/ene-mene.txt
+   74  ./s4.sh -c ./ekhem/ene-mene.txt
+   75  tree
+   76  v ekhem/ene-mene..txt ekhem/ene-mene.txt
+   77  mv ekhem/ene-mene..txt ekhem/ene-mene.txt
+   78  tree
+   79  ./s4.sh -c ./ekhem/ene-mene.txt
+   80  tree
+   81  ./s4.sh -c ./ekhem/ene-mene.txt
+   82  tree
+   83  ./s4.sh -d ./ekhem/mene-ene
+   84  tree
+   85  ./s4.sh -dv ./ekhem/mene-ene.txt
+   86  tree
+   87  ./s4.sh -av ah ./ekhem/ene
+   88  ./s4.sh -av ha ./ekhem/ene.ah
+   89  tree
+   90  ./s4.sh -av ha ./ekhem/ene.ah
+   91  tree
+   92  ./s4.sh -bv ./ekhem/ene.ah.ha
+   93  ./s4.sh -av ha ./ekhem/ene.ah
+   94  ./s4.sh -bv ./ekhem/ene.ah.ha
+   95  ./s4.sh -av ha ./ekhem/ene.ah
+   96  ./s4.sh -bv ./ekhem/ene.ah.ha
+   97  ./s4.sh -av ha ./ekhem/ene.ah
+   98  ./s4.sh -bv ./ekhem/ene.ah.ha
+   99  ./s4.sh -av ha ./ekhem/ene.ah
+  100  ./s4.sh -bv ./ekhem/ene.ah.ha
+  101  ./s4.sh -av ha ./ekhem/ene.ah
+  102  ./s4.sh -bv ./ekhem/ene.ah.ha
+  103  ./s4.sh -av ha ./ekhem/ene.ah
+  104  ./s4.sh -bv ./ekhem/ene.ah.ha
+  105  ./s4.sh -ev xd ./ekhem/ene.ah
+  106  tree
+  107  ./s4.sh -ev ah ./ekhem/ene.xd
+  108  ./s4.sh -ev xd ./ekhem/ene.ah
+  109  tree
+  110  ./s4.sh -bv ./ekhem/ene.xd
+  111  ./s4.sh -e xd -v ./ekhem/ene.ah
+  112  script --help
+  113  script
+  114  tree
+  115  exit
+  116  s1.sh co
+  117  ./s1.sh co
+  118  ./s2.sh ekhem/licz/lili.txt 
+  119  ./s3.sh -r a makapaka
+  120  ./s3.sh -u makapaka
+  121  ./s3.sh -d pa makapaka
+  122  ./s3.sh -l makapaka
+  123  exit
+  124  cd Linux-Osowski/lab10
+  125  scritp
+  126  script
+  127  mv typescript typescript.txt 
+  128  exit
+  129  tree
+  130  cd /Desktop
+  131  cd Desktop
+  132  tree
+  133  pwd
+  134  exit
+  135  cd Linux-Osowski/lab11
+  136  tree
+  137  cat 1lab11.txt 
+  138  cat kotek_sed 
+  139  sed '/<komentarz>/,/<komentarz>/!d' kotek_sed
+  140  sed '/<komentarz>/,/</komentarz>/!d' kotek_sed
+  141  sed '/<komentarz>/,/<//komentarz>/!d' kotek_sed
+  142  sed '/komentarz/,/komentarz/!d' kotek_sed
+  143  sed -n '/komentarz/,/komentarz/p' kotek_sed
+  144  sed -n '/komentarz/,/mentarz/p' kotek_sed
+  145  sed -n '/nie/,/KONIEC/p' kotek_sed
+  146  sed -n '/Dobranoc/,/KONIEC/p' kotek_sed
+  147  sed -n '/komentarz/,/KONIEC/p' kotek_sed
+  148  sed -n '/komentarz/,/Dob/p' kotek_sed
+  149  sed -n '/komentarz/,/kom/p' kotek_sed
+  150  sed -n '/komentarz/,///p' kotek_sed
+  151  sed -n '/komentarz/,/\//p' kotek_sed
+  152  sed -n '/komentarz/,/\/komentarz/p' kotek_sed
+  153  sed -n '/komentarz/,/\/komentarz/p' kotek_sed > 111
+  154  sed '/komentarz/,/\/komentarz/d' kotek_sed
+  155  sed '/komentarz/,/\/komentarz/d' kotek_sed >112
+  156  cat 1lab11.txt 
+  157  sed '/komentarz/,/\/komentarz/c\ ' kotek_sed
+  158  sed '/komentarz/,/\/komentarz/c\\n' kotek_sed
+  159  cat kotek_sed 
+  160  sed '/komentarz/,/\/komentarz/c\\n' kotek_sed
+  161  sed '/komentarz/,/\/komentarz/c\[\n]' kotek_sed
+  162  sed '/komentarz/,/\/komentarz/c\maka' kotek_sed
+  163  cat kotek_sed 
+  164  sed '/komentarz/,/\/komentarz/c\\n\n\n\n\n\n' kotek_sed
+  165  sed '/komentarz/,/\/komentarz/c\\n\n\n\n\n' kotek_sed
+  166  cat kotek_sed 
+  167  sed '/komentarz/,/\/komentarz/c\\n\n\n\n\n' kotek_sed
+  168  cat kotek_sed 
+  169  sed '/komentarz/,/\/komentarz/c\\n\n\n\n\n' kotek_sed
+  170  cat kotek_sed 
+  171  sed '/komentarz/,/\/komentarz/ {s/\S/ /g}' kotek_sed
+  172  sed '/komentarz/,/\/komentarz/ {s/\S/\n/g}' kotek_sed
+  173  sed '/komentarz/,/\/komentarz/ {s/\S//g}' kotek_sed
+  174  sed '/komentarz/,/\/komentarz/ {s/\S//g}' kotek_sed > 113
+  175  sed -e '1,/Pan Kotek/!d' -e '/KONIEC/,$!d' kotek_sed 
+  176  sed '/Pan Kotek/,/KONIEC/!d' kotek_sed 
+  177  sed '/Pan Kotek/,/KONIEC/d' kotek_sed 
+  178  sed '/Pan kotek/,/KONIEC/!d' kotek_sed 
+  179  sed -e '/Pan kotek/i\Stanisław Jachowicz' -e '/KONIEC/a\Stanisław Jachowicz' kotek_sed 
+  180  sed -e '/Pan kotek/i\Stanisław Jachowicz' -e '/KONIEC/a\Stanisław Jachowicz' kotek_sed > 114
+  181  sed '/komentarz/,/\/komentarz/ {s/\S//g}' kotek_sed
+  182  sed '/komentarz/,/\/komentarz/ {s/ /\n/g}' kotek_sed
+  183  sed '/komentarz/,/\/komentarz/ {/ /c\}' kotek_sed
+  184  sed '/komentarz/,/\/komentarz/ {s/ /^/g ; c\}' kotek_sed
+  185  sed '/komentarz/,/\/komentarz/ {s/ /^/g}' kotek_sed
+  186  sed -e '/komentarz/,/\/komentarz/ {s/ /^/g}' -e '/^/c\' kotek_sed
+  187  sed -e '/komentarz/,/\/komentarz/ {s/ /^/g}' -e '/\^/c\' kotek_sed
+  188  cat kotek_sed 
+  189  sed -e '/komentarz/,/\/komentarz/ {s/ /^/g}' -e '/\^/c\' kotek_sed
+  190  sed '/komentarz/,/\/komentarz/ {s/ /^/c\}' kotek_sed
+  191  sed '/komentarz/,/\/komentarz/ {s/ /^/gc\}' kotek_sed
+  192  sed '/komentarz/,/\/komentarz/ {s/^.* *.*$/&/g}' kotek_sed
+  193  sed '/komentarz/,/\/komentarz/ {s/^.* .*$/&/g}' kotek_sed
+  194  sed '/komentarz/,/\/komentarz/ {s/^.* *.*$/kek&/g}' kotek_sed
+  195  sed '/komentarz/,/\/komentarz/ {s/^.* .*$/kek&/g}' kotek_sed
+  196  sed '/komentarz/,/\/komentarz/ {s/^ +$/kek&/g}' kotek_sed
+  197  sed '/komentarz/,/\/komentarz/ {s/^ $/kek&/g}' kotek_sed
+  198  sed '/komentarz/,/\/komentarz/ {s/^.*$/kek&/g}' kotek_sed
+  199  sed '/komentarz/,/\/komentarz/ {s/^.* $/kek&/g}' kotek_sed
+  200  sed '/komentarz/,/\/komentarz/ {s/^.* .*$/kek&/g}' kotek_sed
+  201  sed '/komentarz/,/\/komentarz/ {s/^.* .*$//g}' kotek_sed
+  202  sed '/komentarz/,/\/komentarz/ {s/^.*$//g}' kotek_sed
+  203  sed '/komentarz/,/\/komentarz/ {s/^\s*$//g}' kotek_sed
+  204  sed '/komentarz/,/\/komentarz/ {s/^\s$//g}' kotek_sed
+  205  sed '/komentarz/,/\/komentarz/ {s/\s//g}' kotek_sed
+  206  sed -e '/komentarz/,/\/komentarz/ {s/ /kek/g}' -e '/\kek/c\' kotek_sed
+  207  sed -e '/komentarz/,/\/komentarz/ {s/ /makapaka/g}' -e '/\makapaka/c\' kotek_sed
+  208  sed -e '/komentarz/,/\/komentarz/ {s/ /makapaka/}' -e '/\makapaka/c\' kotek_sed
+  209  sed -e '/komentarz/,/\/komentarz/ {s/ /makapaka/}' -e '/\makapaka/c\' kotek_sed > 116
+  210  sed '/komentarz/,/\/komentarz/ {s/ /_/}'
+  211  sed '/komentarz/,/\/komentarz/ {s/ /_/}' kotek_sed 
+  212  sed '/komentarz/,/\/komentarz/ {s/ /_/g}' kotek_sed 
+  213  sed '/komentarz/,/\/komentarz/ {s/ /_/g ; s/\t/_/g}' kotek_sed 
+  214  sed '/komentarz/,/\/komentarz/ {s/ /_/g ; s/\t/_/g}' kotek_sed > 117
+  215  tree
+  216  sed 's/<.*>/<ZNACZNIK>/g}' kotek_sed
+  217  sed 's/<.*>/<ZNACZNIK>/g' kotek_sed
+  218  sed 's/<.*>/<ZNACZNIK>/g' kotek_sed > 115
+  219  sed '1,/\S/!d' kotek_sed
+  220  sed '1,/\S/c\' kotek_sed
+  221  sed '1,/\S/ {/^&/c\}' kotek_sed
+  222  sed '1,/\S/ {s/^\n$/^$/g}' kotek_sed
+  223  sed '1,/\S/ {s/^ $/^$/g}' kotek_sed
+  224  sed '1,/\S/ {/^$/d}' kotek_sed
+  225  sed '1,/\S/ {/^$/d}' kotek_sed > 16
+  226  sed '/komentarz/,/\/komentarz/ {/ /d}' kotek_sed
+  227  sed '/komentarz/,/\/komentarz/ {/ /d}' kotek_sed > 116
+  228  tree
+  229  cat 19
+  230  cat 1lab11.txt 
+  231  history
+  232  cat 19
+  233  cat 1lab11.txt 
+  234  '/\-/!d' kotek_sed
+  235  sed '/\-/!d' kotek_sed
+  236  cat 19
+  237  sed '/\-/!d' kotek_sed > 19
+  238  touch lab11.txt
+  239  cat 1lab11.txt 
+  240  echo "12) '$d' kotek_sed" >> lab11.txt 
+  241  em lab11.txt 
+  242  em lab11.txt rm lab11.txt 
+  243  rm lab11.txt 
+  244  touch lab11.txt
+  245  echo "12) sed '$d' kotek_sed" >> lab11.txt 
+  246  cat lab11.txt 
+  247  echo "12) sed \'$d\' kotek_sed" >> lab11.txt 
+  248  cat lab11.txt 
+  249  echo --help
+  250  echo -h
+  251  echo '--help'
+  252  echo --help
+  253  echo -n --help
+  254  echo -n "12) sed '$d' kotek_sed\n" >> lab11.txt 
+  255  cat lab11.txt 
+  256  echo "12) sed '\$d' kotek_sed" >> lab11.txt 
+  257  cat lab11.txt 
+  258  echo "12) sed '\$d' kotek_sed" >> lab11.txt 
+  259  cat lab11.txt 
+  260  nano lab11.txt 
+  261  cat 1lab11.txt 
+  262  echo "13) sed -n '27,\$p' kotek_sed" >> lab11.txt 
+  263  cat lab11.txt 
+  264  nano lab11.txt 
+  265  history
+  266  nano lab11.txt 
+  267  touch pliczek.csv
+  268  nano pliczek.csv 
+  269  touch s2.sh
+  270  nano s2.sh 
+  271  cd ..
+  272  cd lab10
+  273  cat s1.sh 
+  274  cd ..
+  275  cd lab11
+  276  nano s2.sh 
+  277  chmod a+x s2.sh
+  278  nano s2.sh 
+  279  cp ~ewao/UNIX/read_komentarze.c ./
+  280  tree ~ewao/UNIX/
+  281  find ~ewao/UNIX/ -name "read_komentarze.c"
+  282  find ~ewao/UNIX/ -name "*.c"
+  283  find ~ewao/ -name "*.c"
+  284  find ~ewao/ -name "*.c" 2> /dev/null
+  285  cp ~ewao/Linux-lab11/read-komentarze.c ./
+  286  cat read-komentarze.c 
+  287  sed -f skrypt.sed read-komentarze.c 
+  288  cat lab11.txt 
+  289  sed -f skrypt.sed read-komentarze.c 
+  290  sed -fE skrypt.sed read-komentarze.c 
+  291  sed -Ef skrypt.sed read-komentarze.c 
+  292  cat read-komentarze.c 
+  293  sed -Ef skrypt.sed read-komentarze.c 
+  294  cat lab11.txt 
+  295  sed -Ef skrypt.sed read-komentarze.c 
+  296  cat read-komentarze.c 
+  297  sed -Ef skrypt.sed read-komentarze.c 
+  298  sed -Ef skrypt1.sed read-komentarze.c 
+  299  sed -Ef skrypt1.sed read-komentarze.c > 31
+  300  exit
+  301  cd Linux-Osowski/lab11
+  302  ./s2.sh pliczek.csv 
+  303  ./s2.sh
+  304  ./s2.sh asdasd
+  305  ./s2.sh pliczek.csv 
+  306  sed -E 's/([A-Z][a-z]+) ([A-Z][a-z]+)/\2, \1/' pliczek.csv 
+  307  echo "Onie Bonie" | sed -E 's/([A-Z][a-z]+) ([A-Z][a-z]+)/\2, \1/' 
+  308  echo "Onie, Bonie" | sed -E 's/([A-Z][a-z]+) ([A-Z][a-z]+)/\2, \1/' 
+  309  echo "Onie, Bonie" | sed -E 's/([^0-9]+);([^0-9]+)/\2, \1/' 
+  310  echo "Onie, Bonie" | sed -E 's/([^0-9]+),([^0-9]+)/\2, \1/' 
+  311  ./s2.sh pliczek.csv 
+  312  cat pliczek.csv 
+  313  ./s2.sh pliczek.csv 
+  314  echo "Onie, Bonie" | sed -E 's/([^0-9]+),([^0-9]+)/\2, \1/' 
+  315  echo "Onie, Bonie" | sed -E 's/([^0-9]+), ([^0-9]+)/\2, \1/' 
+  316  echo "Onie, Bonie" | sed -E 's/([^0-9]+)[, ]([^0-9]+)/\2, \1/' 
+  317  echo "Onie,Bonie" | sed -E 's/([^0-9]+)[, ]([^0-9]+)/\2, \1/' 
+  318  cat pliczek.csv 
+  319  sed -E 's/([A-Z][a-z]+)[; ]([A-Z][a-z]+)' pliczek.csv 
+  320  sed -E 's/([A-Z][a-z]+)[; ]([A-Z][a-z]+/\2 \1/)' pliczek.csv 
+  321  sed -E 's/([A-Z][a-z]+)[; ]([A-Z][a-z]+)/\2 \1/' pliczek.csv 
+  322  sed -E 's/([A-Z][a-z]+);([A-Z][a-z]+)/\2 \1/' pliczek.csv 
+  323  sed -E 's/([A-Za-z ]+);([A-Za-z ]+)/\2 \1/' pliczek.csv 
+  324  sed -E 's/([A-Za-z ]+);([A-Za-z ]+)/\2 \1/'pliczek.csv 
+  325  sed -E 's/([A-Za-z ]+);([A-Za-z ]+)/\2\1/' pliczek.csv 
+  326  sed -E 's/([A-Za-z ]+);([A-Za-z ]+)/\2 \1/' pliczek.csv 
+  327  sed -E 's/([A-Za-z ]+);([A-Za-z ]+)/\2 \1/' pliczek.csv | sed 's/;/ /g'
+  328  sed -e '1d' -eE 's/([A-Za-z ]+);([A-Za-z ]+)/\2 \1/' pliczek.csv | sed 's/;/ /g'
+  329  sed -e '1d' -e -E 's/([A-Za-z ]+);([A-Za-z ]+)/\2 \1/' pliczek.csv | sed 's/;/ /g'
+  330  sed -e '1d' -Ee 's/([A-Za-z ]+);([A-Za-z ]+)/\2 \1/' pliczek.csv | sed 's/;/ /g'
+  331  sed -e '1d' -Ee 's/([A-Za-z ]+);([A-Za-z ]+)/\2 \1/' -e 's/;/ /g' pliczek.csv 
+  332  sed -e '1d' -Ee 's/([A-Za-z ]+);([A-Za-z ]+)/\2 \1/' -e 's/;/ /g' -e 's/^ //g' pliczek.csv 
+  333  sed -e '1d' -Ee 's/([A-Za-z ]+);([A-Za-z ]+)/\2 \1/' -e 's/;/ /g' -e 's/^ //g' -e 's/  / /g' pliczek.csv 
+  334  ./s2.sh pliczek.csv 
+  335  ./s2.sh pliczek.c
+  336  ./s2.sh 
+  337  ./s2.sh pliczek.csv 
+  338  ./s2.sh pliczek.csv > 3
+  339  touch skrypt.sed
+  340  chmod a+x skrypt.sed 
+  341  nano skrypt.sed 
+  342  mv skrypt.sed skrypt1.sed 
+  343  tree
+  344  exit
+  345  cd Linux-Osowski/lab11
+  346  nano skrypt2.sed 
+  347  cp skrypt2.sed skrypt3.sed 
+  348  nano skrypt4.sed 
+  349  nano skrypt5.sed 
+  350  nano skrypt6.sed 
+  351  rm skrypt6.sed 
+  352  exit
+  353  cd Desktop
+  354  mkdir inne
+  355  cd inne/
+  356  mkdir lab5
+  357  cd lab5/
+  358  touch zad1.c
+  359  nano zad1.c 
+  360  touch zad2.c
+  361  nano zad2.c 
+  362  touch zad3.c
+  363  nano zad3.c 
+  364  cd ..
+  365  tree
+  366  mkdir lab6
+  367  cd lab6
+  368  touch zad1.c
+  369  nano zad1.c 
+  370  touch zad2.c
+  371  nano zad2.c 
+  372  touch zad3.c
+  373  nano zad3.c 
+  374  touch zad4.c
+  375  nano zad4.c 
+  376  cd ..
+  377  mkdir lab7
+  378  cd lab7
+  379  touch zad1.c
+  380  nano zad1.c 
+  381  touch zad2.c
+  382  nano zad2.c 
+  383  touch zad3.c
+  384  nano zad3.c 
+  385  touch zad4.c
+  386  nano zad4.c 
+  387  cd ..
+  388  mkdir lab8
+  389  cd lab8
+  390  tree
+  391  nano zad1.c 
+  392  touch zad2.c
+  393  nano zad2.c 
+  394  touch zad3.c
+  395  nano zad3.c 
+  396  touch zad4.c
+  397  nano zad4.c 
+  398  cd ..
+  399  cd Linux-Osowski/lab11
+  400  tree
+  401  echo "Onie Bonie" | sed -E 's/([A-Z][a-z]+) ([A-Z][a-z]+)/\2, \1/' 
+  402  history
+  403  sed -Ef skrypt1.sed read-komentarze.c
+  404  cp skrypt1.sed skrypt2.sed 
+  405  sed -Ef skrypt2.sed read-komentarze.c
+  406  cat lab11.txt 
+  407  cat 3
+  408  cat s2.sh 
+  409  sed -Ef skrypt2.sed read-komentarze.c
+  410  sed -Ef skrypt2.sed read-komentarze.c > 32
+  411  sed '/if/i\Instrukcja if' read-komentarze.c 
+  412  sed '/if/i\Instrukcja if' read-komentarze.c > 33
+  413  cat read-komentarze.c 
+  414  tree
+  415  mv skrypt3.sed skrypt4.sed 
+  416  sed -Ef skrypt4.sed read-komentarze.c
+  417  cat read-komentarze.c 
+  418  sed -Ef skrypt4.sed read-komentarze.c
+  419  cat read-komentarze.c 
+  420  sed -Ef skrypt4.sed read-komentarze.c
+  421  sed -Ef skrypt4.sed read-komentarze.c > 34
+  422  cat read-komentarze.c 
+  423  cp skrypt4.sed skrypt5.sed 
+  424  cat lab11.txt 
+  425  cat s2.sh 
+  426  sed -Ef skrypt5.sed read-komentarze.c > 34
+  427  sed -Ef skrypt4.sed read-komentarze.c > 34
+  428  sed -Ef skrypt5.sed read-komentarze.c
+  429  cat read-komentarze.c 
+  430  sed -Ef skrypt5.sed read-komentarze.c
+  431  cat read-komentarze.c 
+  432  sed -Ef skrypt5.sed read-komentarze.c
+  433  cat read-komentarze.c 
+  434  sed -Ef skrypt5.sed read-komentarze.c
+  435  cat read-komentarze.c 
+  436  sed -Ef skrypt5.sed read-komentarze.c
+  437  cat s2.sh 
+  438  sed -Ef skrypt5.sed read-komentarze.c
+  439  ed -Ef skrypt5.sed read-komentarze.c
+  440  sed -Ef skrypt5.sed read-komentarze.c
+  441  sed -Ef skrypt5.sed read-komentarze.c > 35
+  442  cp skrypt5.sed skrypt6.sed 
+  443  sed -Ef skrypt6.sed read-komentarze.c
+  444  sed '/.*\S.*{/ {s/{//g ; i\{' read-komentarze.c 
+  445  sed '/.*\S.*\{/ {s/\{//g ; i\\{' read-komentarze.c 
+  446  sed -E '/.*\S.*\{/ {s/\{//g ; i\\{' read-komentarze.c 
+  447  sed -E '/.*\S.*\{/ {s/\{//g}' read-komentarze.c 
+  448  sed -E '/.*\S.*{/ {s/\{//' read-komentarze.c 
+  449  sed -E '/.*\S.*\{/ {s/\{//g ; i\\{}' read-komentarze.c 
+  450  sed '/.*\S.*\{/ {s/\{//g ; i\\{}' read-komentarze.c 
+  451  sed -E '/.*\S.*\{/ {s/\{//g}' read-komentarze.c 
+  452  sed -E '/.*\S.*\{/i\{' read-komentarze.c 
+  453  sed -E '/.*\S.*\{/i\\{' read-komentarze.c 
+  454  sed -E '/.*\S.*{/i\{' read-komentarze.c 
+  455  sed -E '/.*\S.*{/i{' read-komentarze.c 
+  456  sed -E '/.*\S.*\{/i\{' read-komentarze.c 
+  457  cat read-komentarze.c 
+  458  sed -E '/.*\S.*\{/i\{' read-komentarze.c 
+  459  sed -E '/.*\S.*\{/a\{' read-komentarze.c 
+  460  sed -e '/.*\S.*\{/a\{' read-komentarze.c 
+  461  sed '/.*\S.*\{/a\{' read-komentarze.c 
+  462  sed -E '/.*\S.*\{/a\{' read-komentarze.c 
+  463  sed -Ee '/.*\S.*\{/a\{' -Ee '/.*\S.*\{/s/\{//g' read-komentarze.c 
+  464  sed -Ee '/.*\S.*\{/a\{' -Ee '/.*\S.*\{/s/\{//g' read-komentarze.c >36
+  465  tree
+  466  cat lab11.txt 
+  467  history
+  468  nano lab11.txt 
+  469  cat s2.sh 
+  470  nano lab11.txt 
+  471  cat skrypt1.sed 
+  472  nano lab11.txt 
+  473  cat skrypt2.sed 
+  474  nano lab11.txt 
+  475  cat skrypt4.sed 
+  476  nano lab11.txt 
+  477  cat skrypt5.sed 
+  478  nano lab11.txt 
+  479  asdasdasdasdtar cvf L3_Osowski.tar 
+  480  tree
+  481  tar cvf L3_Osowski.tar 1[2-9] 11[0-7] 3 3[1-6]
+  482  cat L3_Osowski.tar 
+  483  cp L3_Osowski.tar ~ewao/Stud2024/lab11
+  484  exit
+  485  cd Linux-Osowski/lab11
+  486  sed -Ef skrypt1.sed read-komentarze.c 
+  487  tree
+  488  mkdir co
+  489  history
+  490  cp ~ewao/Linux-lab11/read-komentarze.c ./co/
+  491  sed -Ef skrypt1.sed ./co/read-komentarze.c 
+  492  cat skrypt1.sed 
+  493  sed -Ef skrypt1.sed read-komentarze.c 
+  494  sed '/if/i\Instrukcja if' read-komentarze.c
+  495  cat read-komentarze.c 
+  496  cat ./co/read-komentarze.c 
+  497  exit
+  498  tree
+  499  rtee
+  500  tree
+  501  cd Linux-Osowski/
+  502  cd lab12
+  503  tree
+  504  cd Linux-Osowski/
+  505  cd lab12
+  506  tree
+  507  cat lab12meh.txt 
+  508  cat lista2.csv 
+  509  cd ..
+  510  mkdir innnnnnne
+  511  cd innnnnnne/
+  512  touch stud.awk
+  513  chmod 777 stud.awk 
+  514  nano stud.awk 
+  515  cat stud.awk 
+  516  tree ~ewao/Linux-kol/
+  517  cp ~ewao/Linux-kol/students.txt ./
+  518  touch students.txt
+  519  nano students.txt 
+  520  nano stud.awk 
+  521  ./stud.awk students.txt 
+  522  nano stud.awk 
+  523  ./stud.awk students.txt 
+  524  nano stud.awk 
+  525  ./stud.awk students.txt 
+  526  cat students.txt 
+  527  ./stud.awk students.txt 
+  528  nano stud.awk 
+  529  ./stud.awk students.txt 
+  530  touch fmerge.sh
+  531  chmod 777 fmerge.sh 
+  532  nano fmerge.sh 
+  533  tree ~ewao/Stud2022/kol2/Pliki/
+  534  tree ~ewao/Stud2024/kol2/Pliki/
+  535  tree ~ewao/Stud2025/kol2/Pliki/
+  536  tree ~ewao/Stud2025/kol2/
+  537  tree ~ewao/Stud2024/kol2/
+  538  tree ~ewao/Stud2024/
+  539  tree ~ewao/Stud2022/
+  540  tree ~ewao/Stud2023/
+  541  tree ~ewao/Stud2024/
+  542  tree
+  543  mkdir ojoj
+  544  nano fmerge.sh 
+  545  cd ojoj/
+  546  touch jak
+  547  nano jak
+  548  touch tak
+  549  nano tak
+  550  touch mak
+  551  nano mak 
+  552  cd ..
+  553  cd ojoj/
+  554  mv mak mak.txt
+  555  tree
+  556  cd
+  557  cd Linux-Osowski/innnnnnne/
+  558  ./fmerge.sh ./ojoj/*
+  559  ./fmerge.sh ./ojoj/[a]
+  560  tree
+  561  cat merged.txt 
+  562  nano fmerge.sh 
+  563  cat ./ojoj/mak.txt 
+  564  ./fmerge.sh ./ojoj/*
+  565  cat merged.txt 
+  566  nano fmerge.sh 
+  567  ./fmerge.sh ./ojoj/*
+  568  cat merged.txt 
+  569  nano fmerge.sh 
+  570  ./fmerge.sh ./ojoj/*
+  571  cat merged.txt 
+  572  nano fmerge.sh 
+  573  ./fmerge.sh ./ojoj/*
+  574  cat merged.txt 
+  575  rm merged.txt 
+  576  ./fmerge.sh ./ojoj/*
+  577  cat merged.txt 
+  578  nano fmerge.sh 
+  579  rm merged.txt 
+  580  ./fmerge.sh ./ojoj/*
+  581  cat merged.txt 
+  582  nano fmerge.sh 
+  583  rm merged.txt 
+  584  ./fmerge.sh ./ojoj/*
+  585  nano fmerge.sh 
+  586  rm merged.txt 
+  587  ./fmerge.sh ./ojoj/*
+  588  cat merged.txt 
+  589  nano fmerge.sh 
+  590  tree
+  591  touch files-maker.sh
+  592  chmod 777 files-maker.sh 
+  593  nano files-maker.sh 
+  594  mkdir nwm
+  595  cd nwm
+  596  ../files-maker.sh 
+  597  tree
+  598  cd Zadanie1
+  599  tree
+  600  cat lab1.cpp 
+  601  cat lab1.h
+  602  cat main.cpp 
+  603  cd ..
+  604  nano files-maker.sh 
+  605  cd nwm/
+  606  rm -r ./*
+  607  tree
+  608  ../files-maker.sh 
+  609  tree
+  610  cd Zadanie1
+  611  cat main.cpp 
+  612  cat lab1.cpp 
+  613  cat lab1.h
+  614  cd ..
+  615  cd Zadanie5
+  616  cat main.cpp 
+  617  cat lab5.cpp 
+  618  cat lab5.h
+  619  cd ..
+  620  rm -r ./*
+  621  ../files-maker.sh 5
+  622  tree
+  623  cd ..
+  624  nano files-maker.sh 
+  625  tree
+  626  nano fmerge.sh 
+  627  nano stud.awk 
+  628  awk 'BEGIN {}' makapaka.txt
+  629  awk 'BEGIN {iloczyn=1} {iloczyn=iloczyn*$2} END {print iloczyn}' makapaka.txt
+  630  touch makapaka
+  631  nano makapaka 
+  632  awk 'BEGIN {iloczyn=1} {iloczyn=iloczyn*$2} END {print iloczyn}' makapaka.txt
+  633  awk 'BEGIN {iloczyn=1} {iloczyn=iloczyn*$2} END {print iloczyn}' makapaka
+  634  awk '{iloczyn*=$2} END {print iloczyn}' makapaka
+  635  awk 'BEGIN {iloczyn=1} {iloczyn*=$2} END {print iloczyn}' makapaka
+  636  cat makapaka 
+  637  nano
+  638  nano makapaka 
+  639  awk 'BEGIN {iloczyn=1} {iloczyn*=$2} END {print iloczyn}' makapaka
+  640  awk '{iloczyn*=$2} END {print iloczyn}' makapaka
+  641  cat makapaka 
+  642  awk '{iloczyn*=$2} END {print iloczyn}' makapaka
+  643  awk 'BEGIN {iloczyn=1} {iloczyn*=$2} END {print iloczyn}' makapaka
+  644  awk '' makapaka2
+  645  awk '{if ( $3>max ) (max=$3;linia=NR) } END {print "Linia: ",linia}' makapaka2
+  646  awk '{if ( $3>max ) (max=$3 ; linia=NR) } END {print "Linia: ",linia}' makapaka2
+  647  awk '{if ( $3>max ) max=$3 ; linia=NR } END {print "Linia: ",linia}' makapaka2
+  648  nano makapaka2
+  649  awk '{if ( $3>max ) max=$3 ; linia=NR } END {print "Linia: ",linia}' makapaka2
+  650  awk 'BEGIN {max=0} {if ( $3>max ) {max=$3 ; linia=NR} } END {print "Linia: ",linia}' makapaka2
+  651  awk 'BEGIN {max=1} {if ( $3>max ) {max=$3 ; linia=NR} } END {print "Linia: ",linia}' makapaka2
+  652  awk '{if ( $3>max ) {max=$3 ; linia=NR} } END {print "Linia: ",linia}' makapaka2
+  653  awk '{ $3>max {max=$3 ; linia=NR} } END {print "Linia: ",linia}' makapaka2
+  654  awk ' $3>max {max=$3 ; linia=NR} END {print "Linia: ",linia}' makapaka2
+  655  awk 'NR=1 || $3>max {max=$3 ; linia=NR} END {print "Linia: ",linia}' makapaka2
+  656  awk 'NR==1 || $3>max {max=$3 ; linia=NR} END {print "Linia: ",linia}' makapaka2
+  657  awk 'NR==1 || $3>max {max=$3 ; linia=$0} END {print "Linia: ",linia}' makapaka2
+  658  awk '{if ( $3>max ) {max=$3 ; linia=%0} } END {print "Linia: ",linia}' makapaka2
+  659  awk '{if ( $3>max ) {max=$3 ; linia=$0} } END {print "Linia: ",linia}' makapaka2
+  660  awk '{if ( $3>max ) {max=$3 ; linia=$0} } END {print "Linia:",linia}' makapaka2
+  661  awk '{if ( $3>max ) {max=$3 ; linia=$0} } END {print linia}' makapaka2
+  662  nano makapaka2
+  663  cat makapaka2
+  664  awk '{if ( $3>max ) {max=$3 ; linia=$0} } END {print linia}' makapaka2
+  665  awk 'NR==1 || $3>max {max=$3 ; linia=$0} END {print "Linia: ",linia}' makapaka2
+  666  awk 'NR==1 || $3>max {max=$3 ; linia=$0} END {print linia}' makapaka2
+  667  cat makapaka2
+  668  awk '{if ( $3>max ) {max=$3 ; linia=$0} } END {print linia}' makapaka2
+  669  awk 'NR==1 || $3>max {max=$3 ; linia=$0} END {print linia}' makapaka2
+  670  history > historyja.txt
+  671  exit
+  672  cd Linux-Osowski/
+  673  cd innnnnnne/
+  674  sed '[0-9]*' makapaka2
+  675  sed -E '[0-9]*' makapaka2
+  676  sed '/[0-9]*/' makapaka2
+  677  sed '/[0-9]*/d' makapaka2
+  678  sed '/[0-9]*/-d' makapaka2
+  679  sed '/[0-9]*/!d' makapaka2
+  680  sed -E '/[0-9]*/!d' makapaka2
+  681  man man
+  682  sed -E '/[0-9]*/ {for(i in $\)}' makapaka2
+  683  cd ..
+  684  cd lab12
+  685  cat lab12meh.txt 
+  686  awk -F';' '/^[ \t]*$/ {puste=+1} END {print "Puste:",puste, "Niepuste:",NR-putse}' lista2.csv
+  687  awk -F';' '/^[ \t]*$/ {print}' lista2.csv
+  688  awk -F';' '/^[ \t ]*$/ {print}' lista2.csv
+  689  awk -F';' '/^[\s]*$/ {print}' lista2.csv
+  690  awk -F';' '/^[\S]*$/ {print}' lista2.csv
+  691  awk -F';' '/^[\b]*$/ {print}' lista2.csv
+  692  awk -F';' '/[\S]*/ {print}' lista2.csv
+  693  awk -F';' '/[\s]*/ {print}' lista2.csv
+  694  awk -F';' '/[\s]/ {print}' lista2.csv
+  695  awk -F';' '/[\S]/ {print}' lista2.csv
+  696  awk -F';' '/[[A]/ {print}' lista2.csv
+  697  awk -F';' '/^[ \t\M]*$/ {print}' lista2.csv
+  698  awk -F';' '/^[ \t]*$/ {print}' lista2.csv
+  699  awk -F';' '/[ \t]/ {print}' lista2.csv
+  700  awk -F';' '/[ \t]*/ {print}' lista2.csv
+  701  awk -F';' '/[ \t]+/ {print}' lista2.csv
+  702  awk -F';' '/[\s]/ {print}' lista2.csv
+  703  awk -F';' '/[\s]{0}/ {print}' lista2.csv
+  704  awk -F';' '/[\s]\{0\}/ {print}' lista2.csv
+  705  awk -F';' '/[\s]{0}/ {print}' lista2.csv
+  706  awk -F';' '/[\s]/ {print}' lista2.csv
+  707  awk -F';' '/[\s]*/ {print}' lista2.csv
+  708  awk -F';' '/[\s]+/ {print}' lista2.csv
+  709  awk -F';' '/[\S]/ {print}' lista2.csv
+  710  awk -F';' '/\S/ {print}' lista2.csv
+  711  awk -F';' '/\S{0}/ {print}' lista2.csv
+  712  awk -F';' '/\S/ {print}' lista2.csv
+  713  awk -F';' '/\S*/ {print}' lista2.csv
+  714  awk -F';' '/\S/ {print}' lista2.csv
+  715  nano lista2.csv 
+  716  awk -F';' '/^\S*$/ {print}' lista2.csv
+  717  awk -F';' '/^[ \S]*$/ {print}' lista2.csv
+  718  awk -F';' '/^[ \S\t]*$/ {print}' lista2.csv
+  719  awk -F';' '/^[ ]*$/ {print}' lista2.csv
+  720  awk -F';' '/^[ \S\t]*$/ {print}' lista2.csv
+  721  awk -F';' '/[0-9]/ {print}' lista2.csv
+  722  awk -F';' '/[^0-9]/ {print}' lista2.csv
+  723  awk -F';' '/[^\S]/ {print}' lista2.csv
+  724  awk -F';' '/[^\s]/ {print}' lista2.csv
+  725  awk -F';' '/[^\D]/ {print}' lista2.csv
+  726  awk -F';' '/[^\d]/ {print}' lista2.csv
+  727  awk -F';' '/[^\s]/ {print}' lista2.csv
+  728  awk -F';' '/[^\s;\d]/ {print}' lista2.csv
+  729  awk -F';' '/[^\s;\d@]/ {print}' lista2.csv
+  730  awk -F';' '/[^\s;\d@\.]/ {print}' lista2.csv
+  731  awk -F';' '/[^\s;\d@\.]*/ {print}' lista2.csv
+  732  awk -F';' '/[^\s;\d@\.]+/ {print}' lista2.csv
+  733  awk -F';' '/^[ \t]$/ {print}' lista2.csv
+  734  awk -F';' '/^[ \t]*$/ {print}' lista2.csv
+  735  awk -F';' '/^[ \t\M]*$/ {print}' lista2.csv
+  736  awk -F';' '/^[ \tM]*$/ {print}' lista2.csv
+  737  awk -F';' '/^[ \t0]*$/ {print}' lista2.csv
+  738  awk -F';' '/^[ \t \t \t]*$/ {print}' lista2.csv
+  739  awk -F';' '/^[ \t]*$/ {print}' lista2.csv
+  740  mcedit lista2.csv 
+  741  awk -F';' '/^[ \t^M]*$/ {print}' lista2.csv
+  742  awk -F';' '/^[ \t\^M]*$/ {print}' lista2.csv
+  743  awk -F';' '/^[ \t\^\M]*$/ {print}' lista2.csv
+  744  awk -F';' '/^[ \t^M]*$/ {print}' lista2.csv
+  745  mcedit lista2.csv 
+  746  awk -F';' '/^[ \t]*$/ {print}' lista2.csv
+  747  cat lab12meh.txt 
+  748  awk -F';' '/^[ \t]*$/ {puste=+1} END {print "Puste:",puste, "Niepuste:",NR-putse}' lista2.csv
+  749  awk -F';' '/^[ \t]*$/ {print}' lista2.csv
+  750  awk -F';' '/^[ \t]*$/ {puste=+1} END {print "Puste:",puste, "Niepuste:",NR-putse}' lista2.csv
+  751  awk -F';' '/^[ \t]*$/ {puste+=1} END {print "Puste:",puste, "Niepuste:",NR-putse}' lista2.csv
+  752  awk -F';' '/^[ \t]*$/ {puste+=1} END {print "Puste:",puste, "Niepuste:",NR-putse}' lista2.csv usunąłem w pliku te takie ^M
+  753  awk -F';' '/^[ \t]*$/ {puste+=1} END {print "Puste:",puste, "Niepuste:",NR-putse}' lista2.csv
+  754  awk -F';' '/^[ \t]*$/ {puste+=1} END {print "Puste:",puste, "Niepuste:",NR-putse}' lista2.csv > 22
+  755  awk -F';' '{print,NF,":",$0}'
+  756  awk -F';' '{print NF,":",$0}'
+  757  awk -F';' '{print NF,":",$0}' lista.csv 
+  758  awk -F';' - 'BEGIN {OFS=""} {print NF,":",$0}' lista.csv 
+  759  awk -F';' 'BEGIN {OFS=""} {print NF,":",$0}' lista.csv 
+  760  awk -F';' 'BEGIN {OFS=""} {print NF-1,":",$0}' lista.csv 
+  761  awk -F';' 'BEGIN {OFS=""} {print NF-1,":",$0}' lista.csv Odjąć jeden bo na końcu jest to ^M
+  762  mcedit lista2.csv 
+  763  awk -F';' 'BEGIN {OFS=""} {print NF-1,":",$0}' lista.csv > 23
+  764  awk -F';' '{if(RN%2==1) print}' lista.csv > 23
+  765  awk -F';' '{if(RN%2==0) print}' lista.csv > 23
+  766  awk -F';' 'BEGIN {OFS=""} {print NF-1,":",$0}' lista.csv > 23
+  767  awk -F';' '{if(RN%2==0) print}' lista.csv 
+  768  awk -F';' '{if((RN%2)==0) print $0}' lista.csv 
+  769  awk -F';' '{if(NR%2==0) print $0}' lista.csv 
+  770  awk -F';' '{if(NR%2==0) print $0}' lista.csv > 24
+  771  awk -F';' '{print $(NF-5)}' lista.csv > 24
+  772  awk -F';' '{if(NR%2==0) print $0}' lista.csv > 24
+  773  awk -F';' '{print $(NF-5)}' lista.csv
+  774  awk -F';' '{if(NR==1) print}' lista.csv
+  775  awk -F';' '{ print}' lista.csv
+  776  awk -F';' '{ print} END {print}' lista.csv
+  777  awk -F';' '{ print} END {print "kekw"}' lista.csv
+  778  awk -F';' '{ print} END {print $0}' lista.csv
+  779  cat lab12meh.txt 
+  780  awk -F';' '{ print} END {print $0}' lista.csv
+  781  awk -F';' '{for(i in NF) print $(2i)}' lista.csv
+  782  awk -F';' '{while(i<NF) {print $(2i);i++}}' lista.csv
+  783  awk -F';' '{while(i<NF) {print $(2i);i++};i=0}' lista.csv
+  784  awk -F';' '{print $2,$4,$6,$8}' lista.csv
+  785  awk -F';' '{for(i=1;i<=NF,i++) print $i}' lista.csv
+  786  awk -F';' '{for(i=1;i<=NF;i++) print $i}' lista.csv
+  787  awk -F';' '{for(i=1;i<=NF;i=i+2) print $i}' lista.csv
+  788  awk -F';' '{for(i=1;i<=NF;i=i+2) print $i}' lista.csv > 24
+  789  awk -F';' '{print $(NF-5)}' lista.csv > 24
+  790  awk -F';' '{for(i=1;i<=NF;i=i+2) print $i}' lista.csv > 24
+  791  awk -F';' '{print $(NF-5)}' lista.csv
+  792  cat lista2.csv 
+  793  cat lista.csv 
+  794  awk -F';' '{print $(NF-5)}' lista.csv
+  795  awk -F';' '{print $(NF-5)}' lista.csv > 25
+  796  awk -F';' 'BEGIN {min=0;max=0} {if(NF<min) min=NF ; if(NF>max) max=NF} {print "Maxymalne: " ; if(NF==max) print max ; print "minimalne: " ; if(NF==min) print min}' lista.csv
+  797  awk -F';' 'BEGIN {min=0;max=0} {if(NF<min) min=NF ; if(NF>max) max=NF} {if(NF==max) print "Maksymalne: ", $0; if(NF==min) print "Minimalne: ", $0}' lista.csv
+  798  awk -F';' 'BEGIN {min=2000;max=0} {if(NF<min) min=NF ; if(NF>max) max=NF} {if(NF==max) print "Maksymalne: ", $0; if(NF==min) print "Minimalne: ", $0}' lista.csv
+  799  awk -F';' 'BEGIN {min=2000;max=0} {if(NF<min) min=NF ; if(NF>max) max=NF} {if(NF==max) print "Maksymalne: ", $0; if(NF==min) print "Minimalne: ", $0}' lista.csv > 26
+  800  tree
+  801  exit
+  802  cd Linux-Osowski/
+  803  cd lab12
+  804  tree
+  805  awk -F';' '' lista.csv 
+  806  awk -F';' ' ' lista.csv 
+  807* awk -F';' '{print} END {print}' lista.csv 
+  808  history
+  809  tree
+  810  history > lab12hem.txt

@@ -1,0 +1,40 @@
+.
+├── doc
+│   ├── 1-tree.txt
+│   ├── 3.txt
+│   ├── 4a.txt
+│   ├── 4b.txt
+│   ├── 4d.txt
+│   ├── 4e.txt
+│   ├── 4f.txt
+│   ├── 4f-users.txt
+│   ├── 6a.txt
+│   ├── 6b.txt
+│   ├── 7-tree.txt
+│   └── temp
+└── zip
+    └── pliki
+        ├── ala
+        ├── arch1.zip
+        ├── arch2.tar.gz
+        ├── docs
+        │   ├── a
+        │   │   ├── a1
+        │   │   │   └── aa1
+        │   │   └── a2
+        │   │       └── aa2
+        │   ├── kotek
+        │   ├── myfile
+        │   ├── s1
+        │   ├── S1
+        │   ├── Sm2
+        │   └── ss2
+        ├── main.c
+        ├── makefile
+        ├── Makefile
+        ├── plik.html
+        ├── receiver.c
+        ├── sender.c
+        └── words
+
+9 directories, 29 files
